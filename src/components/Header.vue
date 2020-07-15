@@ -2,7 +2,7 @@
   <div class="wrap">
     <div class="wrap-box">
           <div class="logo">
-              <img src="../assets/LOGO@2x.png" alt="">
+             <router-link to="/"> <img src="../assets/LOGO@2x.png" alt=""></router-link>
           </div>
          <div class="nav">
              <ul>
