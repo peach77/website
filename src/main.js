@@ -4,8 +4,8 @@ import router from '../router'
 import '../commen.css'
 import store from '../store'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
-// import 'swiper/css/swiper.css'
-// import 'swiper/swiper-bundle.css'
+import '../node_modules/swiper/swiper.css'
+import '../node_modules/swiper/swiper-bundle.css'
 Vue.use(VueAwesomeSwiper)
 Vue.config.productionTip = false
 const setHtmlFontSize = () => {
