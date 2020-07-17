@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-      我是智能取药机
+      <h1>我是智能取药机</h1>
   </div>
 </template>
 
