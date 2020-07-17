@@ -25,7 +25,7 @@
                             <li @click="ChangeTheNavigation('solution')"><router-link to="/Solution/SupplyChains">供应链</router-link></li>
                         </ul>
                         </li>
-                    <li @click="ChangeTheNavigation('cooperation')"><router-link to="/Cooperation" active-class="active" >合作支持</router-link></li>
+                    <li @click="ChangeTheNavigation('cooperation')"><router-link to="/Cooperation" active-class="active" >合作服务</router-link></li>
                     <li @click="ChangeTheNavigation('aboutus')"><router-link to="/AboutUs" active-class="active" >关于我们</router-link>
                       <ul>
                             <li @click="ChangeTheNavigation('aboutus')"><router-link to="/AboutUs"  >公司介绍</router-link></li>
