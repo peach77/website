@@ -1,5 +1,6 @@
 <template>
   <div class="wrap">
+   
     <div class="banner">
       
         <el-carousel :interval="2000" arrow="always">    
@@ -53,7 +54,7 @@
       </div>
   </div>
       <div class="news">
-        <h1>我是新闻板块</h1>
+        <router-link to='/CompanyNews'><h1>我是新闻板块</h1></router-link>
       </div>
    <div class="partner">
         <div class="product-display">
@@ -102,6 +103,7 @@
 </template>
 
 <script>
+
   export default {
     name: 'homepage',
     // mounted(){
@@ -374,6 +376,10 @@ div.contact .small-img span{
 }
 .small-img .right-five{
   margin-right: 0.8rem;
+}
+div.news{
+  width: 62.5%;
+  margin: 0 auto;
 }
 </style>
 <style>

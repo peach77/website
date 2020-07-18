@@ -1,7 +1,6 @@
 <template>
   <div class="wrap">
-      <p>关于我们1111</p>
-      <router-view></router-view>
+      <h1>我视新闻</h1>
   </div>
 </template>
 
@@ -13,4 +12,4 @@ export default {
 
 <style>
 
-</style>>
+</style>

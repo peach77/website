@@ -1,16 +1,15 @@
 <template>
   <div class="wrap">
-      <p>关于我们1111</p>
-      <router-view></router-view>
+      <h1>我是企业文化</h1>
   </div>
 </template>
 
 <script>
 export default {
-
+ 
 }
 </script>
 
 <style>
 
-</style>>
+</style>

@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-      <h1>我是ODM</h1>
+      <h1>我是新闻</h1>
   </div>
 </template>
 

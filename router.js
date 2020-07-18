@@ -18,58 +18,94 @@ import OEM from './src/components/OEM';
 import ODM from './src/components/ODM';
 import Resource from './src/components/Resource';
 import SupplyChains from './src/components/SupplyChains';
+import CompanyNews from './src/components/CompanyNews' ;
+import CompanyProfile from './src/components/CompanyProfile';
+import CorporateCulture from './src/components/CorporateCulture';
+import Honour from './src/components/Honour';
+import DetailedFreshMachine from './src/components/DetailedFreshMachine'
+// import BigNews from './src/components/BigNews'
+
 const routes=[
     //单个路由均为对象类型，path代表的是路径，component代表组件
-    {path:'/',component:HomePage},
-    {path:'/Products',component:Products,
+    {path:'/',component:HomePage,},
+    { path: '/CompanyNews',component:CompanyNews,
+    // children:[{
+    //     path:'/CompanyNews/BigNews',
+    //     component:BigNews,
+    //     name:'BigNews'
+    // }]
+    },
+    {path:'/Products',component:Products,name:'Products',
     children: [
         {
           path: '/Products/FreshMachine',
-          component: FreshMachine
+          component: FreshMachine,
+          name:'FreshMachine',
+          children:[
+              { path: 'DetailedFreshMachine',
+              component: DetailedFreshMachine}
+            
+          ]
         },
         {
-            path: '/Products/GetMedicine',
+            path: 'GetMedicine',
             component: GetMedicine
         },
         {
-            path: '/Products/Balloon',
+            path: 'Balloon',
             component: Balloon
         },
         {
-            path: '/Products/CottonCandy',
+            path: 'CottonCandy',
             component:CottonCandy
         },
         {
-            path: '/Products/SpaceTimeBall',
+            path: 'SpaceTimeBall',
             component:SpaceTimeBall
         },
         {
-            path: '/Products/RollCar',
+            path: 'RollCar',
             component:RollCar
         }
       ]},
     {path:'/Solution',component:Solution,
     children: [
         {
-          path: '/Solution/OEM',
+          path: 'OEM',
           component: OEM
         },
         {
-            path: '/Solution/ODM',
+            path: 'ODM',
             component: ODM
         },
         {
-            path: '/Solution/Resource',
+            path: 'Resource',
             component: Resource
         },
         {
-            path: '/Solution/SupplyChains',
+            path: 'SupplyChains',
             component:SupplyChains
         }
        
       ]},
     {path:'/Cooperation',component:Cooperation},
-    {path:'/AboutUs',component:AboutUs}
+    {path:'/AboutUs',component:AboutUs,
+    children: [
+        {
+          path:'CompanyProfile',
+          component: CompanyProfile
+        },
+        {
+            path:'CorporateCulture',
+            component: CorporateCulture
+        },
+        {
+            path:'Honour',
+            component:Honour
+        }
+       
+      ]
+}
 ]
 
 //实例化VueRouter并将routes添加进去

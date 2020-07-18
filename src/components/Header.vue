@@ -6,31 +6,37 @@
           </div>
          <div class="nav">
              <ul>
-                    <li @click="ChangeTheNavigation('homepage')"   @mouseover="mouseOver"> <router-link to="/"  active-class="active" exact>首页</router-link></li>
-                    <li @click="ChangeTheNavigation('products')"><router-link to="/Products" active-class="active" >产品中心</router-link>
+                    <li @click="ChangeTheNavigation('homepage')"   @mouseover="mouseOver"> 
+                        <router-link to="/"  active-class="active" exact>首页</router-link>
+                    </li>
+                   
+                    <li @click="ChangeTheNavigation('products')">
+                        <router-link to="/Products" active-class="active" >产品中心</router-link>
                         <ul>
                             <li @click="ChangeTheNavigation('products')"><router-link to="/Products/FreshMachine"  >无人生鲜机</router-link></li>
-                            <li @click="ChangeTheNavigation('products')"><router-link to="/Products/GetMedicine" >智能取药机</router-link></li>
-                            <li @click="ChangeTheNavigation('products')"><router-link to="/Products/Balloon" >无人气球机</router-link></li>
-                            <li @click="ChangeTheNavigation('products')"><router-link to="/Products/CottonCandy">全自动棉花糖机</router-link></li>
-                            <li @click="ChangeTheNavigation('products')"><router-link to="/Products/SpaceTimeBall" >时空球</router-link></li>
-                            <li @click="ChangeTheNavigation('products')"><router-link to="/Products/RollCar">翻滚车</router-link></li>
+                            <li @click="ChangeTheNavigation('products')"><router-link to="/Products/GetMedicine"  >智能取药机</router-link></li>
+                            <li @click="ChangeTheNavigation('products')"><router-link to="/Products/Balloon"  >无人气球机</router-link></li>
+                            <li @click="ChangeTheNavigation('products')"><router-link to="/Products/CottonCandy"  >全自动棉花糖机</router-link></li>
+                            <li @click="ChangeTheNavigation('products')"><router-link to="/Products/SpaceTimeBall"  >时空球</router-link></li>
+                            <li @click="ChangeTheNavigation('products')"><router-link to="/Products/RollCar"  >翻滚车</router-link></li>
                         </ul>
                     </li>
                     <li @click="ChangeTheNavigation('solution')"><router-link to="/Solution" active-class="active">解决方案</router-link>
-                     <ul>
-                            <li @click="ChangeTheNavigation('solution')"><router-link to="/Solution/OEM"  >OEM制造方</router-link></li>
-                            <li @click="ChangeTheNavigation('solution')"><router-link to="/Solution/ODM" >ODM制造方</router-link></li>
-                            <li @click="ChangeTheNavigation('solution')"><router-link to="/Solution/Resource" >资源共享</router-link></li>
-                            <li @click="ChangeTheNavigation('solution')"><router-link to="/Solution/SupplyChains">供应链</router-link></li>
-                        </ul>
-                        </li>
-                    <li @click="ChangeTheNavigation('cooperation')"><router-link to="/Cooperation" active-class="active" >合作服务</router-link></li>
+                        <ul>
+                                <li @click="ChangeTheNavigation('solution')"><router-link to="/Solution/OEM"  >OEM制造方</router-link></li>
+                                <li @click="ChangeTheNavigation('solution')"><router-link to="/Solution/ODM" >ODM制造方</router-link></li>
+                                <li @click="ChangeTheNavigation('solution')"><router-link to="/Solution/Resource" >资源共享</router-link></li>
+                                <li @click="ChangeTheNavigation('solution')"><router-link to="/Solution/SupplyChains">供应链</router-link></li>
+                            </ul>
+                     </li>
+                    <li @click="ChangeTheNavigation('cooperation')"><router-link to="/Cooperation" active-class="active" >合作服务</router-link>
+                    </li>
                     <li @click="ChangeTheNavigation('aboutus')"><router-link to="/AboutUs" active-class="active" >关于我们</router-link>
                       <ul>
-                            <li @click="ChangeTheNavigation('aboutus')"><router-link to="/AboutUs"  >公司介绍</router-link></li>
-                            <li ><router-link to="/AboutUs" >企业文化</router-link></li>
-                            <li ><router-link to="/AboutUs" >荣誉资质</router-link></li>
+                            <li @click="ChangeTheNavigation('aboutus')"><router-link to="/AboutUs/CompanyProfile"  >公司介绍</router-link>
+                            </li>
+                            <li ><router-link to="/AboutUs/CorporateCulture" >企业文化</router-link></li>
+                            <li ><router-link to="/AboutUs/Honour" >荣誉资质</router-link></li>
                         </ul>
                     </li>
              </ul>
@@ -115,6 +121,7 @@ div.nav li>ul li{
 }
 div.nav li:hover ul{
     display: block;
+    z-index: 100;
 }
 div.nav li>ul>li:hover a{
     color: #297CB3;

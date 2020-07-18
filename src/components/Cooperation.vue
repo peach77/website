@@ -10,15 +10,12 @@
           <p class="line"></p>
           <p class="letter">PRODUCT DISPLAY</p>
         </div>
+       
     </div>
   
   </div>
-  
-
 </template>
-
 <script>
-
 export default {
 name:'wrap',
 
@@ -31,7 +28,6 @@ div.wrap{
 }
 div.wrap-box{
   width: 62.5%;
- 
   margin: 0 auto;
   text-align: center;
 }
