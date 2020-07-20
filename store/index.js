@@ -4,8 +4,10 @@ Vue.use(Vuex)
 
 //创建VueX对象
 const store = new Vuex.Store({
+    
     state:{
         name:'homepage',
+        Anchor:'parameter',
         imgList: [
             {id: 0,url:require('../src/assets/shoutu1.jpg')},
             {id: 1,url:require('../src/assets/shoutu2.jpg')},
@@ -27,6 +29,10 @@ const store = new Vuex.Store({
         //es6语法，等同edit:funcion(){...}
         ChangeTheNavigation(state,n){
             state.name = n
+        },
+        Anchor(state,n){
+            console.log(123);
+            state.Anchor=n
         }
     }
 })

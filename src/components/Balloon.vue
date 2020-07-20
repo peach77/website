@@ -1,9 +1,9 @@
 <template>
 
-  <div class="wrap">
+  <div class="wrap" v-if="$route.path==='/Products/Balloon'">
     
         
-      <router-view ></router-view>
+ 
      
         <div class="page" >
                  <img src="../assets/zhinengqiqiuji.png" alt="">
@@ -30,7 +30,7 @@
              <div class="show">
                   
                     <div class="show-box">
-                         <router-link to='/'><img src="../assets/5.5qiqiu.png" alt=""></router-link><p><b>无人自助生鲜机</b></p>
+                         <router-link to='Balloon/DetailedBalloon'><img src="../assets/5.5qiqiu.png" alt=""></router-link><p><b>无人自助生鲜机</b></p>
                     </div>
                    
         </div>
@@ -38,7 +38,7 @@
         </div>
    
   </div>
-
+     <router-view  v-else></router-view>
 </template>
 
 <script>

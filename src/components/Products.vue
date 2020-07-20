@@ -1,7 +1,7 @@
 
 <template>
- <div  class="wrap"  v-if="$route.path === '/Products' " >
-        <div class="page">
+    <div  class="wrap" v-if="$route.path==='/Products'" >
+        <div class="page"  >
                  <img src="../assets/wurenshengxianji.png" alt="">
                 <div class="list">
                      <div class="item-list">
@@ -38,10 +38,11 @@
                          <router-link  to='/Products/FreshMachine/DetailedFreshMachine'><img src="../assets/xiaoshuangmen2.png" alt=""></router-link><p><b>无人自助生鲜机</b></p>
                     </div>
         </div>
-        </div>
-       
+        </div> 
+    
   </div> 
- <router-view v-else ></router-view> 
+ <router-view  v-else></router-view>
+
 </template>
 
 <script>

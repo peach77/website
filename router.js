@@ -23,6 +23,11 @@ import CompanyProfile from './src/components/CompanyProfile';
 import CorporateCulture from './src/components/CorporateCulture';
 import Honour from './src/components/Honour';
 import DetailedFreshMachine from './src/components/DetailedFreshMachine'
+import DetailedGetMedicine from './src/components/DetailedGetMedicine'
+import DetailedBalloon from './src/components/DetailedBalloon'
+import DetailedCotton from './src/components/DetailedCotton'
+import DetailedSpaceBall from './src/components/DetailedSpaceBall'
+import DetailedRollCar from './src/components/DetailedRollCar'
 // import BigNews from './src/components/BigNews'
 
 const routes=[
@@ -49,23 +54,48 @@ const routes=[
         },
         {
             path: 'GetMedicine',
-            component: GetMedicine
+            component: GetMedicine,
+            children:[
+                { path: 'DetailedGetMedicine',
+                component: DetailedGetMedicine}
+              
+            ]
         },
         {
             path: 'Balloon',
-            component: Balloon
+            component: Balloon,
+            children:[
+                { path: 'DetailedBalloon',
+                component: DetailedBalloon}
+              
+            ]
         },
         {
             path: 'CottonCandy',
-            component:CottonCandy
+            component:CottonCandy,
+            children:[
+                { path: 'DetailedCotton',
+                component: DetailedCotton}
+              
+            ]
         },
         {
             path: 'SpaceTimeBall',
-            component:SpaceTimeBall
+            component:SpaceTimeBall,
+            children:[
+                { path: 'DetailedSpaceBall',
+                component: DetailedSpaceBall}
+              
+            ]
         },
         {
             path: 'RollCar',
-            component:RollCar
+            component:RollCar,
+            children:[
+                { path: 'DetailedRollCar',
+                component: DetailedRollCar}
+              
+            ]
         }
       ]},
     {path:'/Solution',component:Solution,

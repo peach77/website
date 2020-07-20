@@ -1,9 +1,9 @@
 <template>
 
-  <div class="wrap">
+  <div class="wrap" v-if="$route.path==='/Products/SpaceTimeBall'">
     
         
-      <router-view ></router-view>
+     
      
         <div class="page" >
                  <img src="../assets/chanpinshikongqiu.png" alt="">
@@ -30,7 +30,7 @@
              <div class="show">
                   
                     <div class="show-box">
-                         <router-link to='/'><img src="../assets/shikongqiu@2x.png" alt=""></router-link><p><b>无人自助生鲜机</b></p>
+                         <router-link to='SpaceTimeBall/DetailedSpaceBall'><img src="../assets/shikongqiu@2x.png" alt=""></router-link><p><b>无人自助生鲜机</b></p>
                     </div>
                    
         </div>
@@ -38,7 +38,7 @@
         </div>
    
   </div>
-
+ <router-view v-else></router-view>
 </template>
 
 <script>

@@ -1,9 +1,9 @@
 <template>
 
-  <div class="wrap">
+  <div class="wrap"  v-if="$route.path==='/Products/FreshMachine'">
     
-      <router-view ></router-view>
      
+  
         <div class="page" >
                  <img src="../assets/wurenshengxianji.png" alt="">
                 <div class="list">
@@ -45,7 +45,7 @@
         </div>
    
   </div>
-
+<router-view v-else></router-view>
 </template>
 
 <script>
