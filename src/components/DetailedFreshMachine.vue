@@ -90,10 +90,10 @@
                    <div class="part-two"><span><b>IC卡贴卡</b></span><span class="yuan"></span><span class="dian"></span></div>
                    <div class="part-three"><span><b>门把手</b></span><span class="yuan"></span><span class="dian"></span></div>
                     <div class="part-four"><span><b>电子价签</b></span><span class="yuan"></span><span class="dian"></span></div>
-                     <div class="part-five"><span class="dian"></span><span class="yuan"></span><span><b>双屏广告灯箱</b></span></div>
-                    <div class="part-six"><span class="dian"></span><span class="yuan"></span><span><b>金属钣金机身</b></span></div>
-                     <div class="part-seven"><span class="dian"></span><span class="yuan"></span><span><b>广告贴</b></span></div>
-                       <div class="part-eight"><span class="dian"></span><span class="yuan"></span><span><b>广告贴</b></span></div>
+                     <div class="part-five"><span class="dian"></span><span class="yuan right"></span><span><b>双屏广告灯箱</b></span></div>
+                    <div class="part-six"><span class="dian"></span><span class="yuan right"></span><span><b>金属钣金机身</b></span></div>
+                     <div class="part-seven"><span class="dian"></span><span class="yuan right"></span><span><b>广告贴</b></span></div>
+                       <div class="part-eight"><span class="dian"></span><span class="yuan right"></span><span><b>四个万向轮</b></span></div>
                 </div>
             </div>
              <div class="commen">
@@ -109,10 +109,23 @@
             <div class="commen">
                 <p class="line"> </p>
                 <p class="Parameter"><b>产品特点</b></p>
+                <div class="process">
+                  <P><span class="bgc">1</span><span>安全智能无接触生活产物</span></P>
+                  <P><span class="bgc">2</span><span>远程监控</span></P>
+                  <P><span class="bgc">3</span><span>后天管理系统</span></P>
+                  <P><span class="bgc">4</span><span>24小时营业</span></P>
+                  <P><span class="bgc">5</span><span>占地小</span></P>
+                  <P><span class="bgc">6</span><span>无人工</span></P>
+                  <P><span class="bgc">7</span><span>移动广告位</span></P>
+                  <P><span class="bgc">8</span><span>自助购买</span></P>
+                  <P><span class="bgc">9</span><span>设备故障<br>自助报警</span></P>
+                </div>
             </div>
              <div class="commen">
                 <p class="line"> </p>
                 <p class="Parameter"><b>应用场景</b></p>
+                <p class="scene"><img src="../assets/shequ (1).png" class="shequ"><img src="../assets/shequ (2).png" alt=""></p>
+                <p class="scene mg-b"><img src="../assets/shequ (3).png" class="shequ"><img src="../assets/shequ (4).png" alt=""></p>
             </div>
         </div>
     </div>
@@ -387,11 +400,17 @@ div.detailed #two .img .part,.part-one,.part-two,.part-three,.part-four,.part-fi
   position: absolute;
   top: 0.2rem;
   left: 1.6rem;
+   font-family: MicrosoftYaHei;
+}
+div.detailed #two .img span.right{
+
+  margin-right:0.1rem;
 }
 /* 这句话定位不一样 */
+
 div.detailed #two .img .part-one{
   position: absolute;
-  top:2.5rem;
+  top:3rem;
   left: 2rem;
 }
 div.detailed #two .img .part-two{
@@ -472,6 +491,9 @@ div.bottom #three{
   background-color: red;
   margin: 0 auto;
 }
+div.detailed .commen{
+  margin-top:0.8rem;
+}
 div.detailed .commen .step{
   display: flex;
   justify-content: space-between;
@@ -485,6 +507,41 @@ div.detailed .commen .step p{
 div.detailed .commen .step p img{
  margin-bottom: 0.25rem;
  margin-top: 0.5rem;
+}
+div.commen span.bgc{
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url("../assets/tedian@2x.png");
+  height: 0.66rem;
+  text-align: center;
+  background-position: center;
+  background-size: auto;
+  line-height: 0.66rem;
+  color: white;
+  font-size: 0.24rem;
+  font-family: MicrosoftYaHei;
+  margin-bottom: 0.45rem;
+}
+div.commen .process{
+   display: flex;
+   justify-content: space-around;
+}
+div.commen .process p{
+font-size: 0.18rem;
+  width: 1.26rem;
+  text-align: center;
+    font-family: MicrosoftYaHei;  
+    color: #212121;
+}div.commen p.scene .shequ{
+  margin-right: 0.23rem;
+  margin-bottom: 0.18rem;
+}
+div.commen p.scene {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}div.commen p.mg-b{
+  margin-bottom: 1rem;
 }
 </style>
 
