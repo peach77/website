@@ -29,7 +29,7 @@
              <div class="show">
                   
                     <div class="show-box">
-                         <router-link to='RollCar/DetailedRollCar'><img src="../assets/xiaofangunche.png" alt=""></router-link><p><b>无人自助生鲜机</b></p>
+                         <router-link to='RollCar/DetailedRollCar'><img src="../assets/xiaofangunche.png" alt=""></router-link><p><b>翻滚车</b></p>
                     </div>
                    
         </div>

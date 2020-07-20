@@ -84,7 +84,7 @@
                  <p class="line"> </p>
                 <p class="Parameter"><b>功能图解</b></p>
                 <div class="img">
-                  <img src="../assets/yaoji@2x (11).png" alt="">
+                
                   <div class="part"><span><b>钣金机身</b></span><span class="yuan"></span><span class="dian"></span></div>
                   <div class="part-one"><span><b>32英寸高清多媒体触摸屏</b></span><span class="yuan"></span><span class="dian"></span></div>
                    <div class="part-two"><span><b>广告字帖</b></span><span class="yuan"></span><span class="dian"></span></div> 
@@ -110,7 +110,17 @@
                 <p class="line"> </p>
                 <p class="Parameter"><b>工作流程</b></p>
                 <div class="flow">
-                 <h1>我是工作流程</h1>
+                  <p><img src="../assets/huanzhe@2x.png" alt=""><br><span>患者</span></p>
+               
+                  <p><img src="../assets/HISxitong@2x.png" alt=""><br><span>医院HIS系统</span></p>
+                
+                  <p><img src="../assets/chufangxinxi@2x.png" alt=""><br><span>医院联体单位处方信息</span></p>
+                 
+                  <p><img src="../assets/chufangjiesuan@2x.png" alt=""><br><span>处方结算</span></p>
+                 
+                   <p><img src="../assets/zifei@2x (1).png" alt=""><br><span>自费/医保</span></p>
+                   
+                   <p><img src="../assets/quyaowancheng@2x (1).png" alt=""><br><span>自行取药，交易完成</span></p>
                 </div>
             </div>
             <div class="commen">
@@ -131,8 +141,10 @@
              <div class="commen">
                 <p class="line"> </p>
                 <p class="Parameter"><b>应用场景</b></p>
-                <p class="scene"><img src="../assets/shequ (1).png" class="shequ"><img src="../assets/shequ (2).png" alt=""></p>
-                <p class="scene mg-b"><img src="../assets/shequ (3).png" class="shequ"><img src="../assets/shequ (4).png" alt=""></p>
+                <p class="scene"><img src="../assets/changjing@2x.png" class="shequ"><span class="hospital">
+                  <span><b>医院</b></span><br><br>
+                  <span>需联合医院系统目前仅支持摆放到医院</span></span></p>
+                
             </div>
         </div>
     </div>
@@ -310,7 +322,7 @@ div.limit{
 div.middle-nav{
   width: 100%;
   border-bottom: 1px solid rgba(231,231,231,1);
-  margin-bottom: 20px;
+  margin-bottom:0.2rem;
 }
 div.middle-nav .p-total{
   line-height: 1.2rem;
@@ -388,6 +400,7 @@ div.detailed .one-right p span.setwidth{
 div.detailed #two{
   margin: 0 auto;
   text-align: center;
+position: relative;
 
 }
 div.detailed #two  .line{
@@ -396,77 +409,73 @@ div.detailed #two  .line{
   width: 0.35rem;
   border: 1px solid #0063A5;
   margin-bottom: 0.24rem;
+  
 }
 div.detailed #two .Parameter{
   font-size: 0.28rem;
   color: #212121;
   font-family: MicrosoftYaHei;
-  margin-bottom: 0.3rem;
+  margin-bottom: 1rem;
 }
 div.detailed #two .img{
-  position: relative;
+  background-image: url(../assets/yaoji@22x.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 5.91rem;
+  height: 6.1rem;
+  border: 1px dotted #0063A5;
+  margin: auto;
+    background-size: cover;
+    font-family: MicrosoftYaHei;
 }
-div.detailed #two .img img{
-    border: 1px dotted #0063A5;
-
-}
-/* //这是共同属性 */
-div.detailed #two .img .part,.part-one,.part-two,.part-three,.part-four,.part-five,.part-six,.part-seven,.part-eight{
+div.detailed #two .img div{
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 0.2rem;
-  left: 1.6rem;
-  font-family: MicrosoftYaHei;
 }
-div.detailed #two .img span.right{
 
-  margin-right:0.1rem;
-}
-/* 这句话定位不一样 */
 div.detailed #two .img .part{
      position: absolute;
-  top:0.5rem;
+  top:2rem;
   left: 2rem;
 }
 div.detailed #two .img .part-one{
   position: absolute;
-  top:2rem;
-  left: 0.1rem;
+  top:4rem;
+  left: 0.4rem;
 }
 div.detailed #two .img .part-two{
   position: absolute;
-  top:4rem;
-  left: 1.8rem;
+  top:5.8rem;
+  left: 2rem;
 }
 div.detailed #two .img .part-three{
   position: absolute;
- top:0.65rem;
+ top:2.25rem;
   left:7.5rem;
 }
 div.detailed #two .img .part-four{
   position: absolute;
- top:1.55rem;
+ top:3.2rem;
   left:6.4rem;
 }
 div.detailed #two .img .part-five{
   position: absolute;
-  top:1.9rem;
+  top:3.9rem;
   left:7.2rem;
 }
 div.detailed #two .img .part-six{
   position: absolute;
-   top:2.8rem;
+   top:4.4rem;
   left:7.3rem;
 }
 div.detailed #two .img .part-seven{
   position: absolute;
-  top:3.8rem;
+  top:5.4rem;
  left:7rem;
 }
 div.detailed #two .img .part-eight{
    position: absolute;
-  top:5.5rem;
+  top:7.2rem;
   left:7.5rem;
 }
 div.detailed #two .img b{
@@ -555,15 +564,50 @@ font-size: 0.18rem;
     color: #212121;
     font-size: 0.14rem;
 }div.commen p.scene .shequ{
-  margin-right: 0.23rem;
-  margin-bottom: 0.18rem;
+   z-index: 10;
+ 
 }
 div.commen p.scene {
   display: flex;
-  justify-content: center;
-  align-items: baseline;
-}div.commen p.mg-b{
   margin-bottom: 1rem;
+  
+  align-items: flex-end;
+}div.commen p.scene .hospital{
+ 
+  width: 4.5rem;
+  height: 5.2rem;
+  background-color: #EEEEEE;
+  padding: 0 0.6rem;
+  box-sizing: border-box;
+  font-size: 0.28rem;
+  text-align: left;
+  padding-top: 1.5rem;
+  
+}
+div.commen .flow{
+align-items: baseline;
+
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+}
+div.commen .flow img{
+  border:1px dotted rgba(0,99,165,1);
+  margin-bottom: 0.5rem;
+}
+/* div.commen .flow p.line{
+ 
+height: 0;
+width: 0.9rem;
+ border-top:1px dotted rgba(0,99,165,1); 
+ border-bottom:1px dotted rgba(0,99,165,1);
+ margin: 0;
+} */
+div.commen .flow p span{
+  font-size: 0.18rem;
+    font-family: MicrosoftYaHei;  
+    color: #212121;
 }
 </style>
 

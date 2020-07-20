@@ -37,9 +37,7 @@
                     <div class="show-box">
                          <router-link  to='/Products/FreshMachine/DetailedFreshMachine'><img src="../assets/xiaoshuangmen1.png" alt=""></router-link><p><b>无人自助生鲜机</b></p>
                     </div>
-                     <div class="show-box">
-                         <router-link  to='/Products/FreshMachine/DetailedFreshMachine'><img src="../assets/xiaoshuangmen2.png" alt=""></router-link><p><b>无人自助生鲜机</b></p>
-                    </div>
+                  
         </div>
 
         </div>

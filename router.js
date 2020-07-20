@@ -31,6 +31,7 @@ import DetailedRollCar from './src/components/DetailedRollCar'
 // import BigNews from './src/components/BigNews'
 
 const routes=[
+  
     //单个路由均为对象类型，path代表的是路径，component代表组件
     {path:'/',component:HomePage,},
     { path: '/CompanyNews',component:CompanyNews,

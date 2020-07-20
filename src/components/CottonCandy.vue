@@ -30,7 +30,7 @@
              <div class="show">
                   
                     <div class="show-box">
-                         <router-link to='CottonCandy/DetailedCotton'><img src="../assets/mianhuatangji@2x.png" alt=""></router-link><p><b>无人自助生鲜机</b></p>
+                         <router-link to='CottonCandy/DetailedCotton'><img src="../assets/mianhuatangji@2x.png" alt=""></router-link><p><b>全自动棉花糖机</b></p>
                     </div>
                    
         </div>

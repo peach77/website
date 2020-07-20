@@ -30,7 +30,7 @@
              <div class="show">
                   
                     <div class="show-box">
-                         <router-link to='GetMedicine/DetailedGetMedicine'><img src="../assets/yaoji@2x.png" alt=""></router-link><p><b>无人自助生鲜机</b></p>
+                         <router-link to='GetMedicine/DetailedGetMedicine'><img src="../assets/yaoji@2x.png" alt=""></router-link><p><b>智能取药机</b></p>
                     </div>
                    
         </div>

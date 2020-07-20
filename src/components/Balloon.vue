@@ -30,7 +30,7 @@
              <div class="show">
                   
                     <div class="show-box">
-                         <router-link to='Balloon/DetailedBalloon'><img src="../assets/5.5qiqiu.png" alt=""></router-link><p><b>无人自助生鲜机</b></p>
+                         <router-link to='Balloon/DetailedBalloon'><img src="../assets/5.5qiqiu.png" alt=""></router-link><p><b>无人气球机</b></p>
                     </div>
                    
         </div>

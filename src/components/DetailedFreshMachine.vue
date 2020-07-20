@@ -6,7 +6,7 @@
               <p class="first"> 
                 <router-link to="/">产品中心 &gt;</router-link>
               <router-link to="/">我们的产品 &gt;</router-link>
-              <router-link to="/">翻滚车</router-link>
+              <router-link to="/">生鲜机</router-link>
               </p>
               <div class="head">
                  <div class="left"><img src="../assets/shengxianji1@2x.png" alt=""></div>
@@ -84,7 +84,7 @@
                  <p class="line"> </p>
                 <p class="Parameter"><b>功能图解</b></p>
                 <div class="img">
-                  <img src="../assets/shengxian3@2x.png" alt="">
+                 
                   <div class="part"><span><b>摄像头</b></span><span class="yuan"></span><span class="dian"></span></div>
                   <div class="part-one"><span><b>钢化玻璃门</b></span><span class="yuan"></span><span class="dian"></span></div>
                    <div class="part-two"><span><b>IC卡贴卡</b></span><span class="yuan"></span><span class="dian"></span></div>
@@ -293,7 +293,7 @@ div.limit{
 div.middle-nav{
   width: 100%;
   border-bottom: 1px solid rgba(231,231,231,1);
-  margin-bottom: 20px;
+  margin-bottom:0.2rem;
 }
 div.middle-nav .p-total{
   line-height: 1.2rem;
@@ -371,7 +371,7 @@ div.detailed .one-right p span.setwidth{
 div.detailed #two{
   margin: 0 auto;
   text-align: center;
-
+ position: relative;
 }
 div.detailed #two  .line{
   margin: 0 auto; 
@@ -387,66 +387,64 @@ div.detailed #two .Parameter{
   margin-bottom: 0.3rem;
 }
 div.detailed #two .img{
-  position: relative;
+  background-image: url(../assets/shengxian3@2x.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 4.26rem;
+  height: 7.6rem;
+  border: 1px dotted #0063A5;
+  margin: auto;
+    background-size: cover;
+    font-family: MicrosoftYaHei;
 }
-div.detailed #two .img img{
-    border: 1px dotted rgba(33,33,33,1);
-
-}
-/* //这是共同属性 */
-div.detailed #two .img .part,.part-one,.part-two,.part-three,.part-four,.part-five,.part-six,.part-seven,.part-eight{
+div.detailed #two .img div{
   display: flex;
   align-items: center;
+}
+div.detailed #two .img .part{
   position: absolute;
-  top: 0.2rem;
-  left: 1.6rem;
-   font-family: MicrosoftYaHei;
+  left:1.7rem;
+  top: 1.1rem;
 }
-div.detailed #two .img span.right{
-
-  margin-right:0.1rem;
-}
-/* 这句话定位不一样 */
-
 div.detailed #two .img .part-one{
-  position: absolute;
-  top:3rem;
-  left: 2rem;
+   position: absolute;
+  left:2rem;
+  top: 3.2rem;
 }
 div.detailed #two .img .part-two{
-  position: absolute;
-  top:3.3rem;
-  left: 1.8rem;
+    position: absolute;
+  left:1.8rem;
+  top:4.2rem;
 }
 div.detailed #two .img .part-three{
-  position: absolute;
-  top:3.8rem;
-  left: 3.2rem;
+    position: absolute;
+  left:3.3rem;
+  top:4.7rem;
 }
 div.detailed #two .img .part-four{
-  position: absolute;
-  top:4.9rem;
-  left: 2.9rem;
+    position: absolute;
+  left:3rem;
+  top:5.8rem;
 }
 div.detailed #two .img .part-five{
-  position: absolute;
-  top:1rem;
-  left: 7rem;
+    position: absolute;
+  left:7rem;
+  top:2rem;
 }
 div.detailed #two .img .part-six{
-  position: absolute;
-  top:2rem;
-  left:7.8rem;
+    position: absolute;
+  left:7.6rem;
+  top:3rem;
 }
 div.detailed #two .img .part-seven{
   position: absolute;
+  left:7.8rem;
   top:4rem;
-  left:8rem;
 }
 div.detailed #two .img .part-eight{
-   position: absolute;
-  top:7.4rem;
+  position: absolute;
   left:7.4rem;
+  top:8.3rem;
 }
 div.detailed #two .img b{
   font-size: 0.18rem;
