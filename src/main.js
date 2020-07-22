@@ -5,9 +5,13 @@ import '../commen.css'
 import store from '../store'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-import { Carousel, } from 'element-ui';
+import {
+  Carousel, Timeline,
+  TimelineItem
+} from 'element-ui';
 Vue.use(ElementUI);
-Vue.use(Carousel,)
+Vue.use(Carousel, Timeline,
+  TimelineItem)
 
 
 Vue.config.productionTip = false
@@ -24,6 +28,10 @@ const setHtmlFontSize = () => {
 };
 window.onresize = setHtmlFontSize;
 setHtmlFontSize();
+
+
+
+
 
 
 new Vue({
