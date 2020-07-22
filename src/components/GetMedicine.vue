@@ -69,7 +69,8 @@ div.item-list{
 }
 div.item-list a{
    
-    width: 2rem;
+    flex: auto;
+   
    height: 2rem;
    color: #0063A5;
    font-family: MicrosoftYaHei;

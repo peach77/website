@@ -40,13 +40,13 @@ module.exports = {
     pwa: {},
     // webpack-dev-server 相关配置
     devServer: {
-      open: process.platform === 'darwin',
-      disableHostCheck: true,
-      host: 'www.test.com',//如果是真机测试，就使用这个IP
-      port: 1234,
-      https: false,
-      hotOnly: false,
-     before: app => {}
+    //   open: process.platform === 'darwin',
+    //   disableHostCheck: true,
+    //   host: 'www.test.com',//如果是真机测试，就使用这个IP
+    //   port: 1234,
+    //   https: false,
+    //   hotOnly: false,
+    //  before: app => {}
     },
     // 第三方插件配置
     pluginOptions: {

@@ -25,7 +25,7 @@
                         <ul>
                                 <li @click="ChangeTheNavigation('solution')"><router-link to="/Solution/OEM"  >OEM制造方</router-link></li>
                                 <li @click="ChangeTheNavigation('solution')"><router-link to="/Solution/ODM" >ODM制造方</router-link></li>
-                                <li @click="ChangeTheNavigation('solution')"><router-link to="/Solution/Resource" >资源共享</router-link></li>
+                                <li @click="ChangeTheNavigation('solution')"><router-link to="/Solution/Resource" >平台共享</router-link></li>
                                 <li @click="ChangeTheNavigation('solution')"><router-link to="/Solution/SupplyChains">供应链</router-link></li>
                             </ul>
                      </li>

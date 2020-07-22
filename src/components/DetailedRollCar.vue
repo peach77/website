@@ -41,7 +41,7 @@
                    
                    <div class="kong-one"></div>
                    <div class="tel">
-                     <p><router-link to='/' class="getpress">获取底价</router-link>
+                     <p><span class="getpress" @click="goAnchor('#three')">获取底价</span>
                      <a v-bind:href="'tel:'+4000235580" class="num">
                                 <span><b>400-0235580</b></span><br>
                                 <span>拨打热线了解一下</span>

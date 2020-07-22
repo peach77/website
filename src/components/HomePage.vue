@@ -8,6 +8,9 @@
        <img :src="item.url"   class="banner-img">
        </el-carousel-item>
       </el-carousel>
+      <div class="experience" @click="goAnchor('#company')">
+          <p><b>立即体验</b></p>
+      </div>
     </div>
   <div class="productList-bgc">
       <div class="product-banner">
@@ -23,8 +26,8 @@
           <div class="product-bgc">
             <router-link :to="item.path">
                  <img :src="item.url" alt="">
-                 <p class="name"><b>我的名字</b></p>
-               <p class="sugar">我的功能是什么呢12322222</p>
+                 <p class="name"><b>{{item.name}}</b></p>
+               <p class="sugar">{{item.suger}}</p>
             </router-link>
           </div>
        <!-- <h3 class="medium">{{ item }}</h3> -->
@@ -80,7 +83,7 @@
         </div>
         
    </div>
-   <div class="contact">
+   <div class="contact" id="company">
       <div class="left"><h2>11111111111111</h2></div>
       <div class="right">
       <p class="right-one"><b>秦皇岛趣云科技有限公司</b></p>
@@ -106,12 +109,13 @@
 
   export default {
     name: 'homepage',
-    // mounted(){
-    //   console.log(document.getElementsByClassName("el-carousel__item "));
-    //   document.getElementsByClassName("is-in-stage")[2].style.transform="scale(0.5)"
-    //   document.getElementsByClassName("el-carousel__item")[3].style.width="1000px"
-      
-    // }
+     methods:{
+      goAnchor(selector,n) {
+      this.$el.querySelector(selector).scrollIntoView();
+      this.$store.commit('Anchor',n)
+      }
+     
+   }
    
 
   }
@@ -121,10 +125,28 @@
 .img-wrap {
   border:  1px dotted black;
 }
+div.banner{
+  position: relative;
+}
+div.experience{
+  position: absolute;
+    margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width:2rem;
+  height:0.6rem;
+  background-color: #0063A5;
+  z-index: 20;
+  text-align: center;
+  line-height: 0.6rem;
+  color: white;
+  font-size: 0.18rem;
+}
 .product-display p{
   font-family: MicrosoftYaHei-Bold;
   font-size: 0.28rem;
 }
+
 p.circle{
   display:inline-block;
     width: 0.1rem;
