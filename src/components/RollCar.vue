@@ -5,7 +5,7 @@
       
      
         <div class="page" >
-                 <img src="../assets/chanpinfangunche.png" alt="">
+                 <img class="bannerImg" src="../assets/chanpinfangunche.png" alt="">
                 <div class="list">
                      <div class="item-list">
                         <router-link to='/Products/FreshMachine' ><img src="../assets/1@2x (3).png" alt=""><br><span>无人生鲜机</span></router-link>
@@ -65,6 +65,11 @@ div.item-list{
     text-align: center;
    
 
+}
+.bannerImg {
+  width: 100%;
+  height: 31vw;
+  min-height: 3.71rem;
 }
 div.item-list a{
    

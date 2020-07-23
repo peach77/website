@@ -1,7 +1,7 @@
 <template>
   <div class="wrap">
      <div class="banner">
-        <img src="../assets/hezuofuwu (2).png" alt="">
+        <img class="bannerImg" src="../assets/hezuofuwu (2).png" alt="">
     </div>
   <div class="box">
      
@@ -54,17 +54,17 @@
               <br><br>
             <p class="project"><b>软件</b></p> <br><br>
             <p class="store">管理后台、线上商城</p><br><br><br><br><br>
-            <p class="blue"></p>
+            <!-- <p class="blue"></p> -->
             </div>
             <div> <br><br>
               <p  class="project"><b>收益</b></p><br><br>
             <p class="store">广告收益、销售收益、分享收益、招商收益、商城运营收益</p><br><br><br>
-            <p class="blue"></p>
+            <!-- <p class="blue"></p> -->
             </div>
             <div> <br><br>
             <p  class="project"><b>支持</b></p> <br><br>
             <p class="store">选址支持、活动支持、商城支持、设备使用培训、后台管理培训、市场运营培训、渠道进货共享</p><br>
-            <p class="blue"></p>
+            <!-- <p class="blue"></p> -->
             </div>
          </div>
   </div>
@@ -111,6 +111,11 @@ div.box{
 div.wrap-box{
   text-align: center;
 }
+.bannerImg {
+  width: 100%;
+  height: 31vw;
+  min-height: 3.71rem;
+}
 .product-display p{
   font-family: MicrosoftYaHei-Bold;
   font-size: 0.28rem;
@@ -145,14 +150,19 @@ div.article{
 }
 div.article img{
   margin-right: 0.56rem;
+   max-width: 100%;
+        max-height: 100%;
 } div.article p{
   font-size: 0.18rem;
   font-family: MicrosoftYaHei;
   line-height: 0.4rem;
+   max-width: 100%;
+        max-height: 100%;
 }
 div.box-bgc{
   background-color: rgba(243,243,243,1);
   width: 100%;
+margin: auto;
 } div.box-bgc .mode{
   width: 62.5%;
   margin: auto;
@@ -162,6 +172,24 @@ div.box-bgc{
    justify-content: space-between;
    text-align: center;
  }
+div.box-bgc .parter img{
+  max-width: 100%;
+ max-height: 100%;
+}
+  /* .policy-item div{
+   padding: 0 0.5rem ;
+   box-sizing: border-box;
+  
+   width: 3.75rem;
+   height: 2.45rem;
+   background-color: rgba(238,238,238,1);
+    font-family: MicrosoftYaHei;
+    
+   
+ } */
+  div.box-bgc .parter img{
+    width: 3.4rem;
+  }
  div.box-bgc .parter span{
    font-size: 0.24rem;
    margin-top: 0.44rem;
@@ -217,7 +245,7 @@ div.box-bgc{
  }
   div.small-img img{
     margin-bottom: 0.58rem;
-    border: 1px dotted black;
+  
   }
     div.small-img span{
       font-size: 0.18rem;

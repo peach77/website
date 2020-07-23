@@ -84,10 +84,10 @@
        
                 </div> 
                <div class="quality">
-                  <p ><span>质量理念：打造精品，追求卓越 </span><span>研发理念：行业信服，领先市场 </span></p>
+                 <div class="txt"> <p ><span>质量理念：打造精品，追求卓越 </span><span>研发理念：行业信服，领先市场 </span></p>
                  <p><span>生产理念：统筹运作，精准高效</span><span>安全理念：生命，是第一生产力</span></p>
                 <p><span>服务理念：以客户为中心，倡导真诚</span><span>用人理念：人尽其才，才尽其用</span></p>
-               <p><span>营销理念：因为专业，所以突出</span><span> 发展理念：夯实基础、把握规律</span></p>
+               <p><span>营销理念：因为专业，所以突出</span><span> 发展理念：夯实基础、把握规律</span></p></div>
                </div>
          </div>  
          <div class="mind">
@@ -189,6 +189,11 @@ export default {
 div.wrap{
   width: 100%;
 }
+.bannerImg {
+  width: 100%;
+  height: 31vw;
+  min-height: 3.71rem;
+}
 div.bgc-banner img{
   max-width: 100%;
 }
@@ -281,7 +286,12 @@ div.upgrade .xian{
  }
 div.dream{
   background-image: url('../assets/yuanjing.png');
-  height: 7.08rem;
+
+
+   height: 7.2rem;
+  /* height: 31vw;
+  min-height: 3.71rem; */
+   background-size: cover;
 }
 div.dream .wrap-box{
   color: white;
@@ -333,8 +343,15 @@ div.carousel div{
    font-family: MicrosoftYaHei;
 }
 
+/* div.carousel .show-one {
+  display: flex;
+  align-items: center;
+} */
 div.carousel .show-one img{
   margin-right: 0.8rem;
+  max-width: 100%;
+  max-height: 100%;
+  
 }
 div.carousel .show-one span.line{
 display: inline-block;
@@ -347,9 +364,13 @@ div.carousel .show-one b{
 div.carousel .show-one span.txt{
   font-size: 0.18rem;
   line-height: 0.3rem;
+   max-width: 100%;
+  max-height: 100%;
 }
 div.carousel .show-two img{
   margin-right: 0.8rem;
+    max-width: 100%;
+  max-height: 100%;
 }
 div.carousel .show-two span.line{
 display: inline-block;
@@ -362,8 +383,13 @@ div.carousel .show-two b{
 div.carousel .show-two span.txt{
   font-size: 0.18rem;
   line-height: 0.3rem;
+   max-width: 100%;
+  max-height: 100%;
 }
 div.carousel .show-three img{
+    max-width: 100%;
+  max-height: 100%;
+ 
   margin-right: 0.8rem;
 }
 div.carousel .show-three span.line{
@@ -377,8 +403,12 @@ div.carousel .show-three b{
 div.carousel .show-three span.txt{
   font-size: 0.18rem;
   line-height: 0.3rem;
+   max-width: 100%;
+  max-height: 100%;
 }
 div.carousel .show-four img{
+    max-width: 100%;
+  max-height: 100%;
   margin-right: 0.8rem;
 }
 div.carousel .show-four span.line{
@@ -392,12 +422,17 @@ div.carousel .show-four b{
 div.carousel .show-four span.txt{
   font-size: 0.18rem;
   line-height: 0.3rem;
+   max-width: 100%;
+  max-height: 100%;
 }
 div.idea{
-
+ /* width: 100%; */
+  /* height: 31vw;
+  min-height: 3.71rem; */
   background-image: url('../assets/linianpeitu@2x (1).png');
-  height: 7.2rem;
- 
+    height: 7.2rem;
+  background-size: cover;
+   
 }
 div.idea .circle{
    display:inline-block;
@@ -417,10 +452,19 @@ div.idea div.quality{
   margin: auto;
  
 }
+div.idea div.quality .txt{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
 div.idea div.quality p{
+  /* text-align: center;
+  margin: auto; */
+ 
+
   display: flex;
-  justify-content: space-between;
-  padding: 0 3rem;
+  justify-content:space-between;
+ padding: 0 1rem;
   font-size:0.18rem;
 font-family:Microsoft YaHei;
 font-weight:bold;
@@ -467,6 +511,7 @@ div.mind .first-i b{
 }
 div.mind .first-i .set{
   line-height: 0.3rem;
+  
 }
 
 div.mind .first-ii{

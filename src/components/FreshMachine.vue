@@ -71,7 +71,7 @@
 
 <script>
 export default {
-  name: "products",
+  name: "freshmachine",
   mounted() {
     console.log(this.$route.path);
   }

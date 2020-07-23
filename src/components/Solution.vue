@@ -33,20 +33,68 @@
                 </div>
        
           </div>
-          <div class="agency">
-            <ul>
-              <li><span class="one"><img src="../assets/pic1@2x.png" alt=""><span><b>代加工厂商</b></span></span>
-              <span class="two daili"><b>代加工厂商</b><br><span>我司拥有三大生产基地，十多条生产线可进行多种产品加工制造；</span></span></li>
-             <li><span class="one"><img src="../assets/pic2@2x.png" alt=""><span><b>生产许可</b></span></span>
-              <span class="two shengchan"><b>生产许可</b><br><span>获国际CE认证、ISO9001质量认证体系；</span></span></li>
-              <li><span class="one"><img src="../assets/pic3@2x.png" alt=""><span><b>人员实力</b></span></span>
-               <span class="two renyuan"><b>人员实力</b><br><span>从材料加工到安装再到成品出厂，百余名专业技术人员相互配合完成设备的生产；</span></span></li>
-            <li><span class="one"><img src="../assets/pic4@2x.png" alt=""><span><b>硬件实力</b></span></span>
-               <span class="two yingjian"><b>硬件实力</b><br><span>激光贴割机、开平机、折弯机、焊接机、压膜机、转塔冲等二十余台设备，满足多种制作需求。</span></span></li>
-            <li><span class="one"><img src="../assets/pic5@2x.png" alt=""><span><b>软件实力</b></span></span>
-               <span class="two ruanjian"><b>软件实力</b><br><span>JAVA JS  HTML  CSS  C##语言.</span></span></li>
-            </ul>
-          </div>
+        <div class="agency">
+        <ul>
+          <li>
+            <span class="one"
+              ><img src="../assets/pic1@2x.png" alt="" /><span
+                ><b>代加工厂商</b></span
+              ></span
+            >
+            <span class="two daili"
+              ><b>代加工厂商</b><br /><span
+                >我司拥有三大生产基地，十多条生产线可进行多种产品加工制造；</span
+              ></span
+            >
+          </li>
+          <li>
+            <span class="one"
+              ><img src="../assets/pic2@2x.png" alt="" /><span
+                ><b>生产许可</b></span
+              ></span
+            >
+            <span class="two shengchan"
+              ><b>生产许可</b><br /><span
+                >获国际CE认证、ISO9001质量认证体系；</span
+              ></span
+            >
+          </li>
+          <li>
+            <span class="one"
+              ><img src="../assets/pic3@2x.png" alt="" /><span
+                ><b>人员实力</b></span
+              ></span
+            >
+            <span class="two renyuan"
+              ><b>人员实力</b><br /><span
+                >从材料加工到安装再到成品出厂，百余名专业技术人员相互配合完成设备的生产；</span
+              ></span
+            >
+          </li>
+          <li>
+            <span class="one"
+              ><img src="../assets/pic4@2x.png" alt="" /><span
+                ><b>硬件实力</b></span
+              ></span
+            >
+            <span class="two yingjian"
+              ><b>硬件实力</b><br /><span
+                >激光贴割机、开平机、折弯机、焊接机、压膜机、转塔冲等二十余台设备，满足多种制作需求。</span
+              ></span
+            >
+          </li>
+          <li>
+            <span class="one"
+              ><img src="../assets/pic5@2x.png" alt="" /><span
+                ><b>软件实力</b></span
+              ></span
+            >
+            <span class="two ruanjian"
+              ><b>软件实力</b><br /><span>JAVA JS HTML CSS C##语言.</span></span
+            >
+          </li>
+        </ul>
+      </div>
 
 
     </div>
@@ -195,13 +243,51 @@ background:rgba(0,99,165,1);
   margin-top: 0.1rem;
   margin-bottom: 1.34rem;
 }
-div.advantage{
+div.advantage {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.35rem;
+}
+div.advantage div {
+  width: 5.8rem;
+  height: 2.38rem;
+  border: 3px solid rgb(238, 237, 237);
+}
+div.advantage .left,
+.right {
+  display: flex;
+  justify-content: space-between;
+}
+div.advantage .left p {
+  padding-right: 0.3rem;
+  padding-left: 0.23rem;
+  padding-top: 0.56rem;
+  font-size: 0.14rem;
+  font-family: MicrosoftYaHei;
+  overflow: auto;
+}
+div.advantage .left p b {
+  font-size: 0.18rem;
+}
+div.advantage .right p {
+  padding-right: 0.3rem;
+  padding-left: 0.23rem;
+  padding-top: 0.56rem;
+  font-size: 0.14rem;
+  font-family: MicrosoftYaHei;
+  overflow: auto;
+}
+div.advantage .right p b {
+  font-size: 0.18rem;
+}
+/* div.advantage{
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.35rem;
 }
 div.advantage div{
-  width: 5.8rem;
+  min-width: 5.8rem;
+  /* width: 5.8rem; 
   height: 2.38rem;
   border:3px solid rgb(238, 237, 237);
   
@@ -228,7 +314,7 @@ div.advantage  .right  p{
    font-family: MicrosoftYaHei;
 } div.advantage  .right p b{
   font-size: 0.18rem;
-}
+} */
 div.service{
   background-image: url("../assets/bj@2x (1).png");
   height: 7.41rem;
@@ -268,29 +354,28 @@ background:white;
   margin-bottom: 1.34rem;
 } 
 div.service .agency {
-  width: 62.5%;
+  /* 如果用设计图的62.5%那小分辨率电脑就会很难看 */
+  width: 85.5%;
   margin: 0 auto;
   box-sizing: border-box;
- 
-} 
-div.service .agency ul{
-
-   display: flex;
-    justify-content: space-between;
 }
-div.service .agency li:hover .one{
+div.service .agency ul {
+  display: flex;
+  justify-content: space-between;
+}
+div.service .agency li:hover .one {
   display: none;
 }
-div.service .agency li:hover span.two{
+div.service .agency li:hover span.two {
   display: block;
 }
-div.service .agency .one{
+div.service .agency .one {
   display: block;
 }
-div.service .agency span.two{
+div.service .agency span.two {
   display: none;
 }
-div.service .agency  b{
+div.service .agency b {
   text-align: center;
   display: block;
   height: 0.72rem;
@@ -298,9 +383,8 @@ div.service .agency  b{
   background-color: white;
   font-size: 0.18rem;
   font-family: MicrosoftYaHei;
- 
 }
-div.service .agency .two{
+div.service .agency .two {
   text-align: center;
   display: block;
   width: 2.2rem;
@@ -310,30 +394,29 @@ div.service .agency .two{
   font-family: MicrosoftYaHei;
   font-size: 0.18rem;
   color: white;
- 
 }
-div.service .agency .daili{
- background-image: url('../assets/dailijiagongshang.png');
+div.service .agency .daili {
+  background-image: url("../assets/dailijiagongshang.png");
 }
-div.service .agency .shengchan{
- background-image: url('../assets/xuke@2x.png');
+div.service .agency .shengchan {
+  background-image: url("../assets/xuke@2x.png");
 }
-div.service .agency .renyuan{
- background-image: url('../assets/rencaishili.png');
+div.service .agency .renyuan {
+  background-image: url("../assets/rencaishili.png");
 }
-div.service .agency .yingjian{
- background-image: url('../assets/yingjianshili@2x.png');
+div.service .agency .yingjian {
+  background-image: url("../assets/yingjianshili@2x.png");
 }
-div.service .agency .ruanjian{
- background-image: url('../assets/ruanjianshili.png');
+div.service .agency .ruanjian {
+  background-image: url("../assets/ruanjianshili.png");
 }
 
-div.service .agency .two b{
+div.service .agency .two b {
   font-size: 0.24rem;
   background-color: none;
-   background-color: rgba(0,0,0,0);
-  
+  background-color: rgba(0, 0, 0, 0);
 }
+
 div.cooperation{
   width: 62.5%;
   margin: 0 auto;

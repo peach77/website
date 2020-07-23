@@ -96,7 +96,7 @@
         <img src="../assets/tuceng2.png" alt="" />
         <img src="../assets/tuceng3.png" alt="" />
         <img src="../assets/tuceng4.png" alt="" />
-        <img src="../assets/tuceng5.png" alt="" />
+        <img src="../assets/tuceng5.png" alt="" /><br>
         <img src="../assets/tuceng6.png" alt="" />
         <img src="../assets/tuceng7.png" alt="" />
         <img src="../assets/tuceng8.png" alt="" />
@@ -271,13 +271,14 @@ div.four-box {
 }
 div.four-box ul {
   display: flex;
-  height: 5.4rem;
+  /* height: 5.4rem; */
   justify-content: space-between;
 }
 div.four-box ul li {
   display: inline-block;
   width: 2.8rem;
-  /* height: 3.6rem; */
+  height: 3.6rem;
+  
   background-color: rgba(255, 255, 255, 0.83);
   text-align: center;
   padding-left: 0.4rem;
@@ -314,6 +315,7 @@ div.four-box ul li:hover {
   /* width: 3rem; */
   /* height: 3.8rem; */
   /* margin-top: -0.1rem; */
+  
 }
 div.four-box ul li:hover p {
   color: white;
@@ -350,19 +352,21 @@ div.partner {
   padding-bottom: 1rem;
 }
 div.img-box {
-  width: 63.5%;
+  width: 62.5%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content:space-around;
   flex-wrap: wrap;
+  
 }
 div.img-box-one {
   margin-bottom: 0.3rem;
 }
 div.img-box img {
-  border: 1px dotted black;
+ 
+  margin-right: 0.3rem;
 }
 div.contact {
   width: 100%;

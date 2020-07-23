@@ -5,11 +5,19 @@
      </div>
      <div class="box" >
            <div class="item-list">
-                          <router-link to='/Solution/OEM' ><span><b>OEM</b></span></router-link>
-                        <router-link to='/Solution/ODM'  ><span><b>ODM</b></span></router-link>
-                        <router-link to='/Solution/Resource' class="only" ><span><b>平台共享</b></span></router-link>
-                        <router-link to='/Solution/SupplyChains' ><span><b>供应链</b></span></router-link>
-            </div>
+        <router-link to="/Solution/OEM" class="only"
+          ><span><b>OEM</b></span></router-link
+        >
+        <router-link to="/Solution/ODM"
+          ><span><b>ODM</b></span></router-link
+        >
+        <router-link to="/Solution/Resource"
+          ><span><b>平台共享</b></span></router-link
+        >
+        <router-link to="/Solution/SupplyChains"
+          ><span><b>供应链</b></span></router-link
+        >
+      </div>
              <div class="wrap-box">
                 <div class="product-display">
                   <p class="circle"></p>
@@ -86,7 +94,7 @@ div.box{
   margin: 0 auto;
   box-sizing: border-box;
 }
-div.item-list a{
+/* div.item-list a{
   display: inline-block;
   height: 1.2rem;
   width: 2.9rem;
@@ -105,6 +113,30 @@ div.item-list a.only{
   width: 2.9rem;
   line-height: 1.2rem;
   background-color: #0063A5;
+  color: white;
+  font-size: 0.18rem;
+  font-family: MicrosoftYaHei;
+  text-align: center;
+  text-decoration: none;
+} */
+div.item-list a {
+  display: inline-block;
+  height: 1.2rem;
+  width: 25%;
+  line-height: 1.2rem;
+  background-color: white;
+  color: black;
+  font-size: 0.18rem;
+  font-family: MicrosoftYaHei;
+  text-align: center;
+  text-decoration: none;
+}
+div.item-list a.only {
+  display: inline-block;
+  height: 1.2rem;
+  width: 25%;
+  line-height: 1.2rem;
+  background-color: #0063a5;
   color: white;
   font-size: 0.18rem;
   font-family: MicrosoftYaHei;

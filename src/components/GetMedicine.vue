@@ -6,7 +6,7 @@
       
      
         <div class="page" >
-                 <img src="../assets/zhinengquyaoji.png" alt="">
+                 <img  class="bannerImg" src="../assets/zhinengquyaoji.png" alt="">
                 <div class="list">
                      <div class="item-list">
                         <router-link to='/Products/FreshMachine' ><img src="../assets/1@2x (3).png" alt=""><br><span>无人生鲜机</span></router-link>
@@ -44,7 +44,7 @@
 
 <script>
 export default {
-    name:'products',
+    name:'getmedicine',
 mounted() {
     console.log(this.$route.path)
 }
@@ -64,22 +64,20 @@ div.item-list{
     margin: 0 auto;
     display: flex;
     text-align: center;
-   
-
 }
 div.item-list a{
-   
-    flex: auto;
-   
+    flex: auto; 
    height: 2rem;
    color: #0063A5;
    font-family: MicrosoftYaHei;
    font-size: 0.18rem;
    text-decoration: none;
- 
-   
   
-   
+}
+.bannerImg {
+  width: 100%;
+  height: 31vw;
+  min-height: 3.71rem;
 }
 div.products{
     height: 500px;

@@ -1,7 +1,7 @@
 <template>
   <div class="wrap" v-if="$route.path === '/AboutUs'">
     <div class="bgc-banner">
-      <img src="../assets/gongsijieshao.png" alt="" />
+      <img  class="bannerImg" src="../assets/gongsijieshao.png" alt="" />
     </div>
     <div class="box">
       <div class="item-list">
@@ -297,6 +297,11 @@ div.wrap {
 div.bgc-banner img {
   max-width: 100%;
 }
+.bannerImg {
+  width: 100%;
+  height: 31vw;
+  min-height: 3.71rem;
+}
 div.box {
   width: 62.5%;
   margin: 0 auto;
@@ -365,14 +370,19 @@ p.circle {
 }
 div.profile img {
   width: 6rem;
+    max-width: 100%;
+        max-height: 100%;
 }
 div.profile {
+ width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.96rem;
 }
 div.profile p {
+   max-width: 100%;
+        overflow: auto;
   border: 1px solid rgb(219, 219, 219);
   padding: 0.62rem 0.44rem;
   font-size: 0.18rem;
@@ -420,7 +430,7 @@ div.strength {
 }
 div.strength .left,
 .right {
-  width: 5.7rem;
+  width:46%;
   background-color: #0063a5;
   padding: 0 0.64rem;
   font-family: MicrosoftYaHei;
@@ -551,13 +561,13 @@ div.strength .white-line {
   font-size: 0.18rem;
   color: black;
   font-family: MicrosoftYaHei;
-  text-align: left;
+  /* text-align: left; */
   display: flex;
   line-height: 0.4rem;
 }
 .cd-timeline-content p .year {
   color: rgba(0, 99, 165, 1);
-  margin: 0 10px;
+  /* margin: 0 10px; */
 }
 .cd-timeline-content p.my .rightside {
   text-align: left;

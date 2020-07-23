@@ -19,7 +19,9 @@
                 </div>
        
           </div>  
-          <img src="../assets/jiangzhuang.png" alt="" class="jiangzhuang">
+          <div class="jiang">
+            <img src="../assets/jiangzhuang.png" alt="" class="jiangzhuang">
+          </div>
 
      </div>
       
@@ -47,9 +49,7 @@ div.box{
   margin: 0 auto;
   box-sizing: border-box;
 }
-div.box .jiangzhuang{
-  margin-bottom: 0.87rem;
-}
+
 div.item-list{
   display: flex;
 }
@@ -112,5 +112,14 @@ background:rgba(0,99,165,1);
   font-size: 0.14rem;
   margin-top: 0.1rem;
   margin-bottom: 1.34rem;
+}
+div.jiang{
+  width: 62.5%;
+  margin: auto;
+  margin-bottom: 0.87rem;
+  text-align: center;
+}
+div.jiang img{
+  width: 100%;
 }
 </style>
