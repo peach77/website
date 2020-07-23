@@ -1,7 +1,7 @@
 <template>
   <div class="wrap" v-if="$route.path === '/AboutUs'">
     <div class="bgc-banner">
-      <img  class="bannerImg" src="../assets/gongsijieshao.png" alt="" />
+      <img class="bannerImg" src="../assets/gongsijieshao.png" alt="" />
     </div>
     <div class="box">
       <div class="item-list">
@@ -215,11 +215,16 @@
 
             <div class="cd-timeline-content">
               <p class="my-special-right">
-                <span class="year"><b>2019</b><br />years</span> <br /><span>
+                <span class="year"><b>2019</b><br />years</span> <br />
+                <!-- <span>
                   <span class="rightside">
                     03月 荣获中国创新创业一百强单位同期取得了欧盟CE认证</span
                   ><br /><span>03月 北岛博智、增益科技进行天使轮投资</span
-                  ><br /><span>12月 趣云科技成立</span></span
+                  ><br /><span>12月 趣云科技成立</span>
+                </span> -->
+                <span
+                  >03月 荣获中国创新创业一百强单位同期取得了欧盟CE认证<br />03月
+                  北岛博智、增益科技进行天使轮投资<br />12月 趣云科技成立</span
                 >
               </p>
             </div>
@@ -230,7 +235,7 @@
             <div class="cd-timeline-img cd-picture"></div>
 
             <div class="cd-timeline-content">
-              <p class="my-special">
+              <p class="my" style="line-height: 0.3rem; text-align: right;">
                 <span
                   ><span>线上商城进入开发阶段 03月</span><br /><span
                     >无人设备在全国展开大面积运营 04月</span
@@ -370,19 +375,19 @@ p.circle {
 }
 div.profile img {
   width: 6rem;
-    max-width: 100%;
-        max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 div.profile {
- width: 100%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.96rem;
 }
 div.profile p {
-   max-width: 100%;
-        overflow: auto;
+  max-width: 100%;
+  overflow: auto;
   border: 1px solid rgb(219, 219, 219);
   padding: 0.62rem 0.44rem;
   font-size: 0.18rem;
@@ -416,7 +421,8 @@ div.develop {
  
 } */
 div.timeline-wrap {
-  width: 62.5%;
+  width: 72.5%;
+  min-width: 1220px;
   margin: auto;
   padding-bottom: 0.6rem;
 }
@@ -430,7 +436,7 @@ div.strength {
 }
 div.strength .left,
 .right {
-  width:46%;
+  width: 46%;
   background-color: #0063a5;
   padding: 0 0.64rem;
   font-family: MicrosoftYaHei;
@@ -536,10 +542,10 @@ div.strength .white-line {
 .cd-timeline-content p.my {
   font-size: 0.18rem;
   color: black;
-
   font-family: MicrosoftYaHei;
   vertical-align: center;
   display: flex;
+  justify-content: flex-end;
 }
 .cd-timeline-content p.my-special {
   font-size: 0.18rem;
@@ -547,7 +553,7 @@ div.strength .white-line {
   font-family: MicrosoftYaHei;
   text-align: right;
   display: flex;
-  line-height: 0.4rem;
+  line-height: 0.3rem;
   width: max-content;
 }
 .cd-timeline-content p.my-special .year {
@@ -563,11 +569,11 @@ div.strength .white-line {
   font-family: MicrosoftYaHei;
   /* text-align: left; */
   display: flex;
-  line-height: 0.4rem;
+  line-height: 0.3rem;
 }
 .cd-timeline-content p .year {
   color: rgba(0, 99, 165, 1);
-  /* margin: 0 10px; */
+  margin: 0 10px;
 }
 .cd-timeline-content p.my .rightside {
   text-align: left;
@@ -596,7 +602,7 @@ div.strength .white-line {
     color: white;
     margin-left: 0;
     padding: 1.6em;
-    width: 36%;
+    width: 40%;
     margin: 0 5%;
   }
   .cd-timeline-content::before {
