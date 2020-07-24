@@ -38,7 +38,7 @@
       </div>
       <div class="our-products">
         <div class="product-display">
-          <p class="circle"></p>
+          <p class="circle"><img src="../assets/important.png" alt=""></p>
           <p><b>我们的产品</b></p>
           <p class="line"></p>
           <p class="letter">OUR PRODUCTS</p>
@@ -151,13 +151,8 @@ div.show-box a {
   font-family: MicrosoftYaHei-Bold;
   font-size: 0.28rem;
 }
-p.circle {
-  display: inline-block;
-  width: 0.1rem;
-  height: 0.1rem;
-  background: #ffffff;
-  border-radius: 50%;
-  border: 4px solid #0063a5;
+p.circle  img{
+
   margin-top: 1.2rem;
   margin-bottom: 0.12rem;
 }
@@ -178,8 +173,6 @@ div.item-list a.only {
   background-color: #0063a5;
   color: white;
 }
-div.item-list a.only img {
-  border: 1px dotted #88898b;
-}
+
 </style>
 

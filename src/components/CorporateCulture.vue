@@ -12,7 +12,7 @@
             </div>
              <div class="wrap-box">
                 <div class="product-display">
-                  <p class="circle"></p>
+                  <p class="circle"><img src="../assets/important.png" alt=""></p>
                   <p><b>趣云使命</b></p>
                   <p class="line"></p>
                   <p class="letter">MISSION</p>
@@ -35,7 +35,7 @@
      <div class="dream">
          <div class="wrap-box">
                 <div class="product-display">
-                  <p class="circle"></p>
+                  <p class="circle"><img src="../assets/fuzhutuxing@2x.png" alt=""></p>
                   <p><b>趣云愿景</b></p>
                   <p class="line"></p>
                   <p class="letter">VISION</p>
@@ -45,7 +45,7 @@
      </div>
       <div class="wrap-box">
                 <div class="product-display">
-                  <p class="circle"></p>
+                  <p class="circle"><img src="../assets/important.png" alt=""></p>
                   <p><b>趣云价值观</b></p>
                   <p class="line"></p>
                   <p class="letter">SENSE OF WORTH</p>
@@ -76,7 +76,7 @@
         <div class="idea">
                    <div class="wrap-box">
                 <div class="product-display">
-                  <p class="circle"></p>
+                  <p class="circle"><img src="../assets/important.png" alt=""></p>
                   <p><b>趣云理念</b></p>
                   <p class="line"></p>
                   <p class="letter">IDEA</p>
@@ -93,7 +93,7 @@
          <div class="mind">
                <div class="wrap-box">
                 <div class="product-display">
-                  <p class="circle"></p>
+                  <p class="circle"><img src="../assets/important.png" alt=""></p>
                   <p><b>趣云精神</b></p>
                   <p class="line"></p>
                   <p class="letter">SPIRIT</p>
@@ -242,13 +242,8 @@ div.wrap-box{
   font-family: MicrosoftYaHei-Bold;
   font-size: 0.28rem;
 }
-p.circle{
-  display:inline-block;
-    width: 0.1rem;
-  height: 0.1rem;
-  background: #ffffff;
-  border-radius: 50%;
-  border: 4px solid #0063A5;
+p.circle img{
+
   margin-top: 1.2rem;
   margin-bottom: 0.12rem;
 }
@@ -267,6 +262,7 @@ background:rgba(0,99,165,1);
 }
 div.mission{
   display: flex;
+  min-width: 1200px;
   justify-content: space-between;
   margin-bottom: 1.2rem;
 }
@@ -286,6 +282,8 @@ div.upgrade .xian{
  }
 div.dream{
   background-image: url('../assets/yuanjing.png');
+ 
+
 
 
    height: 7.2rem;
@@ -299,13 +297,8 @@ div.dream .wrap-box{
 div.dream  .line{
   background:white;
 }
-div.dream .circle{
-   display:inline-block;
-    width: 0.1rem;
-  height: 0.1rem;
-  background: rgba(0,99,165,0.1);
-  border-radius: 50%;
-  border: 4px solid white;
+div.dream .circle img{
+
   margin-top: 0.6rem;
   margin-bottom: 0.12rem;
 }
@@ -434,13 +427,8 @@ div.idea{
   background-size: cover;
    
 }
-div.idea .circle{
-   display:inline-block;
-    width: 0.1rem;
-  height: 0.1rem;
-  background: rgba(0,99,165,0.1);
-  border-radius: 50%;
-  border: 4px solid rgba(0,99,165,1);
+div.idea .circle img{
+ 
   margin-top: 0.8rem;
   margin-bottom: 0.12rem;
 }

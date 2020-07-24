@@ -11,10 +11,10 @@
                         <router-link to='/Solution/SupplyChains' ><span><b>供应链</b></span></router-link>
             </div> -->
                <div class="item-list">
-        <router-link to="/Solution/OEM" class="only"
+        <router-link to="/Solution/OEM" 
           ><span><b>OEM</b></span></router-link
         >
-        <router-link to="/Solution/ODM"
+        <router-link to="/Solution/ODM" class="only"
           ><span><b>ODM</b></span></router-link
         >
         <router-link to="/Solution/Resource"
@@ -26,7 +26,7 @@
       </div>
              <div class="wrap-box">
                 <div class="product-display">
-                  <p class="circle"></p>
+                  <p class="circle"><img src="../assets/important.png" alt=""></p>
                   <p><b>服务内容</b></p>
                   <p class="line"></p>
                   <p class="letter">SERVICE CONTENT</p>
@@ -47,7 +47,7 @@
      <div class="ways">
          <div class="wrap-box-one">
                 <div class="product-display">
-                  <p class="circle"></p>
+                  <p class="circle"><img src="../assets/fuzhutuxing@2x.png" alt=""></p>
                   <p><b>合作方式</b></p>
                   <p class="line"></p>
                   <p class="letter">MODE OF COOPERATION</p>
@@ -71,7 +71,7 @@
     <div class="flow">
           <div class="wrap-box-one">
                 <div class="product-display">
-                  <p class="circle"></p>
+                  <p class="circle"><img src="../assets/fuzhutuxing@2x.png" alt=""></p>
                   <p><b>合作流程</b></p>
                   <p class="line"></p>
                   <p class="letter">COOPERATION PROCESS</p>
@@ -189,13 +189,8 @@ div.wrap-box{
   font-family: MicrosoftYaHei-Bold;
   font-size: 0.28rem;
 }
-p.circle{
-  display:inline-block;
-    width: 0.1rem;
-  height: 0.1rem;
-  background: #ffffff;
-  border-radius: 50%;
-  border: 4px solid #0063A5;
+p.circle img{
+ 
   margin-top: 1.2rem;
   margin-bottom: 0.12rem;
 }
@@ -224,13 +219,8 @@ div.wrap-box-one{
   font-family: MicrosoftYaHei-Bold;
   font-size: 0.28rem;
 }
- .wrap-box-one p.circle{
-  display:inline-block;
-    width: 0.1rem;
-  height: 0.1rem;
-  background: rgba(255,255,255,0.1);
-  border-radius: 50%;
-  border: 4px solid #ffffff;
+ .wrap-box-one p.circle img{
+  
   margin-top: 1.2rem;
   margin-bottom: 0.12rem;
 }
@@ -261,22 +251,22 @@ div.serve div{
 }
 div.serve .img-bgc-one{
   width: 2rem;
-    background-image: url('../assets/shangcheng@2x.png');
+    background-image: url('../assets/shancgheng @2x.png');
     height: 2.51rem;
 }
 div.serve .img-bgc-two{
    width: 2rem;
-    background-image: url('../assets/houtai@2x.png');
+    background-image: url('../assets/houtai @2x.png');
     height: 2.51rem;
 }
 div.serve .img-bgc-three{
    width: 2rem;
-    background-image: url('../assets/sheji@2x.png');
+    background-image: url('../assets/sheji@2x (1).png');
     height: 2.51rem;
 }
 div.serve .img-bgc-four{
    width: 2rem;
-    background-image: url('../assets/kaifa@2x.png');
+    background-image: url('../assets/kaifa @2x.png');
     height: 2.51rem;
 }
 div.serve .img-bgc-five{

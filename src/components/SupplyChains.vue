@@ -5,7 +5,7 @@
      </div>
      <div class="box" >
            <div class="item-list">
-        <router-link to="/Solution/OEM" class="only"
+        <router-link to="/Solution/OEM" 
           ><span><b>OEM</b></span></router-link
         >
         <router-link to="/Solution/ODM"
@@ -14,13 +14,13 @@
         <router-link to="/Solution/Resource"
           ><span><b>平台共享</b></span></router-link
         >
-        <router-link to="/Solution/SupplyChains"
+        <router-link to="/Solution/SupplyChains" class="only"
           ><span><b>供应链</b></span></router-link
         >
       </div>
              <div class="wrap-box">
                 <div class="product-display">
-                  <p class="circle"></p>
+                  <p class="circle"><img src="../assets/important.png" alt=""></p>
                   <p><b>方案优势</b></p>
                   <p class="line"></p>
                   <p class="letter">PROGRAM ADVANTAGES</p>
@@ -39,7 +39,7 @@
           </div>
              <div class="wrap-box">
                 <div class="product-display">
-                  <p class="circle"></p>
+                  <p class="circle"><img src="../assets/important.png" alt=""></p>
                   <p><b>供应链内容</b></p>
                   <p class="line"></p>
                   <p class="letter">SUPPLY CHAIN CONTENT</p>
@@ -131,13 +131,7 @@ div.wrap-box{
   font-family: MicrosoftYaHei-Bold;
   font-size: 0.28rem;
 }
-p.circle{
-  display:inline-block;
-    width: 0.1rem;
-  height: 0.1rem;
-  background: #ffffff;
-  border-radius: 50%;
-  border: 4px solid #0063A5;
+p.circle img{
   margin-top: 1.2rem;
   margin-bottom: 0.12rem;
 }
@@ -162,13 +156,18 @@ div.advantage{
 div.advantage div{
   width: 5.8rem;
   height: 2.38rem;
-  border:3px solid rgb(238, 237, 237);
+  box-shadow:1px 1px 5px 5px #e2e2e2;
   
 }
 div.advantage  .left,.right{
   display: flex;
   justify-content: space-between;
-  
+  max-width: 100%;
+}div.advantage  .left img{
+   max-width: 100%; 
+}
+div.advantage  .right img{
+   max-width: 100%; 
 }
 div.advantage  .left  p{
   padding-right: 0.3rem;
@@ -181,12 +180,13 @@ div.advantage  .left  p{
   font-size: 0.18rem;
 }
 div.advantage  .right  p{
+  max-width: 100%;
   padding-right: 0.3rem;
   padding-left: 0.23rem;
   padding-top: 0.56rem;
    font-size: 0.14rem;
    font-family: MicrosoftYaHei;
-    overflow: auto;
+   
 } div.advantage  .right p b{
   font-size: 0.18rem;
 }

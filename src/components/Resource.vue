@@ -5,13 +5,13 @@
      </div>
      <div class="box" >
            <div class="item-list">
-        <router-link to="/Solution/OEM" class="only"
+        <router-link to="/Solution/OEM" 
           ><span><b>OEM</b></span></router-link
         >
         <router-link to="/Solution/ODM"
           ><span><b>ODM</b></span></router-link
         >
-        <router-link to="/Solution/Resource"
+        <router-link to="/Solution/Resource" class="only"
           ><span><b>平台共享</b></span></router-link
         >
         <router-link to="/Solution/SupplyChains"
@@ -20,7 +20,7 @@
       </div>
              <div class="wrap-box">
                 <div class="product-display">
-                  <p class="circle"></p>
+                  <p class="circle"><img src="../assets/important.png" alt=""></p>
                   <p><b>共享内容</b></p>
                   <p class="line"></p>
                   <p class="letter">SHARE CONTENT</p>
@@ -38,7 +38,7 @@
           </div>
          <div class="wrap-box">
                 <div class="product-display">
-                  <p class="circle"></p>
+                  <p class="circle"><img src="../assets/important.png" alt=""></p>
                   <p><b>合作方式</b></p>
                   <p class="line"></p>
                   <p class="letter">MODE OF COOPERATION</p>
@@ -152,13 +152,8 @@ div.wrap-box{
   font-family: MicrosoftYaHei;
   font-size: 0.28rem;
 }
-p.circle{
-  display:inline-block;
-    width: 0.1rem;
-  height: 0.1rem;
-  background: #ffffff;
-  border-radius: 50%;
-  border: 4px solid #0063A5;
+p.circle img{
+
   margin-top: 1.2rem;
   margin-bottom: 0.12rem;
 }
@@ -223,7 +218,7 @@ div.serve .img-bgc-five{
 
 div.manufacturer{
 padding-left: 0.55rem;
-  border: 2px solid rgb(224, 224, 224);
+  box-shadow:1px 1px 5px 5px #e2e2e2;
   background-color: white;
   margin: auto;
   position: relative;

@@ -23,7 +23,7 @@
       </div>
       <div class="wrap-box">
         <div class="product-display">
-          <p class="circle"></p>
+          <p class="circle"><img src="../assets/important.png" alt=""></p>
           <p><b>公司简介</b></p>
           <p class="line"></p>
           <p class="letter">COMPANY PROFILE</p>
@@ -40,7 +40,7 @@
     <div class="develop">
       <div class="wrap-box">
         <div class="product-display">
-          <p class="circle"></p>
+          <p class="circle"><img src="../assets/important.png" alt=""></p>
           <p><b>趣云发展</b></p>
           <p class="line"></p>
           <p class="letter">COMPANY DEVELOPMENT</p>
@@ -256,7 +256,7 @@
 
     <div class="wrap-box">
       <div class="product-display">
-        <p class="circle"></p>
+        <p class="circle"><img src="../assets/important.png" alt=""></p>
         <p><b>研发实力 </b></p>
         <p class="line"></p>
         <p class="letter">COMPANY PROFILE</p>
@@ -351,13 +351,8 @@ div.wrap-box {
   font-family: MicrosoftYaHei-Bold;
   font-size: 0.28rem;
 }
-p.circle {
-  display: inline-block;
-  width: 0.1rem;
-  height: 0.1rem;
-  background: #ffffff;
-  border-radius: 50%;
-  border: 4px solid #0063a5;
+p.circle img {
+
   margin-top: 1.2rem;
   margin-bottom: 0.12rem;
 }
@@ -380,6 +375,7 @@ div.profile img {
 }
 div.profile {
   width: 100%;
+    min-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -388,7 +384,7 @@ div.profile {
 div.profile p {
   max-width: 100%;
   overflow: auto;
-  border: 1px solid rgb(219, 219, 219);
+ box-shadow:1px 3px 3px 3px #e2e2e2;
   padding: 0.62rem 0.44rem;
   font-size: 0.18rem;
   font-family: MicrosoftYaHei;

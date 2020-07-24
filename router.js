@@ -28,19 +28,35 @@ import DetailedBalloon from './src/components/DetailedBalloon'
 import DetailedCotton from './src/components/DetailedCotton'
 import DetailedSpaceBall from './src/components/DetailedSpaceBall'
 import DetailedRollCar from './src/components/DetailedRollCar'
-// import BigNews from './src/components/BigNews'
+// import Newsone from './src/components/Newsone'
 
+// import Newstwo from './src/components/Newstwo'
+// import Newsthree from './src/components/Newsthree'
 const routes = [
 
     //单个路由均为对象类型，path代表的是路径，component代表组件
     { path: '/', component: HomePage, },
     {
         path: '/CompanyNews', component: CompanyNews,
-        // children:[{
-        //     path:'/CompanyNews/BigNews',
-        //     component:BigNews,
-        //     name:'BigNews'
-        // }]
+       
+       
+        // children:[
+        //     {
+        //         path: '/CompanyNews/Newsone',
+        //         component: Newsone,
+        //         name: 'Newsone',
+        //     },
+        //     {
+        //         path: '/CompanyNews/Newstwo',
+        //         component: Newstwo,
+        //         name: 'Newstwo',
+        //     },
+        //     {
+        //         path: '/CompanyNews/Newsthree',
+        //         component: Newsthree,
+        //         name: 'Newsthree',
+        //     }
+        // ]
     },
     {
         path: '/Products', component: Products, name: 'Products',

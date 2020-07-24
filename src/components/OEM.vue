@@ -20,7 +20,7 @@
       </div>
       <div class="wrap-box">
         <div class="product-display">
-          <p class="circle"></p>
+          <p class="circle"><img src="../assets/important.png" alt=""></p>
           <p><b>方案优势</b></p>
           <p class="line"></p>
           <p class="letter">PROGRAM ADVANTAGES</p>
@@ -50,7 +50,7 @@
     <div class="service">
       <div class="wrap-box-one">
         <div class="product-display">
-          <p class="circle"></p>
+          <p class="circle"><img src="../assets/fuzhutuxing@2x.png" alt=""></p>
           <p><b>服务内容</b></p>
           <p class="line"></p>
           <p class="letter">SERVICE CONTENT</p>
@@ -121,7 +121,7 @@
     </div>
     <div class="wrap-box">
       <div class="product-display">
-        <p class="circle"></p>
+        <p class="circle"><img src="../assets/important.png" alt=""></p>
         <p><b>合作方式</b></p>
         <p class="line"></p>
         <p class="letter">MODE OF COOPERATION</p>
@@ -146,7 +146,7 @@
     <div class="flow">
       <div class="wrap-box-one">
         <div class="product-display">
-          <p class="circle"></p>
+          <p class="circle"><img src="../assets/fuzhutuxing@2x.png" alt=""></p>
           <p><b>合作流程</b></p>
           <p class="line"></p>
           <p class="letter">COOPERATION PROCESS</p>
@@ -224,7 +224,7 @@ div.bgc img {
 }
 div.box {
   width: 62.5%;
-  min-width: 970px;
+  /* min-width: 970px; */
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -261,13 +261,8 @@ div.wrap-box {
   font-family: MicrosoftYaHei-Bold;
   font-size: 0.28rem;
 }
-p.circle {
-  display: inline-block;
-  width: 0.1rem;
-  height: 0.1rem;
-  background: #ffffff;
-  border-radius: 50%;
-  border: 4px solid #0063a5;
+p.circle img{
+ 
   margin-top: 1.2rem;
   margin-bottom: 0.12rem;
 }
@@ -291,7 +286,7 @@ div.advantage {
 div.advantage div {
   width: 5.8rem;
   height: 2.38rem;
-  border: 3px solid rgb(238, 237, 237);
+ box-shadow:1px 1px 5px 5px #e2e2e2;
 }
 div.advantage .left,
 .right {
@@ -337,12 +332,7 @@ div.wrap-box-one {
   font-size: 0.28rem;
 }
 .wrap-box-one p.circle {
-  display: inline-block;
-  width: 0.1rem;
-  height: 0.1rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  border: 4px solid #ffffff;
+
   margin-top: 1.2rem;
   margin-bottom: 0.12rem;
 }
@@ -359,7 +349,8 @@ div.wrap-box-one {
   margin-bottom: 1.34rem;
 }
 div.service .agency {
-  width: 85.5%;
+  width: 62.5%;
+  /* width: 85.5%; */
   margin: 0 auto;
   box-sizing: border-box;
 }

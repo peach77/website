@@ -7,7 +7,7 @@
      
     <div class="wrap-box">
          <div class="product-display">
-          <p class="circle"></p>
+          <p class="circle"><img src="../assets/important.png" alt=""></p>
           <p><b>行业介绍</b></p>
           <p class="line"></p>
           <p class="letter">INDUSTRY INTRODUCTION</p>
@@ -26,7 +26,7 @@
       <div class="mode">
            <div class="wrap-box">
               <div class="product-display">
-                <p class="circle"></p>
+                <p class="circle"><img src="../assets/important.png" alt=""></p>
                 <p><b>合作模式</b></p>
                 <p class="line"></p>
                 <p class="letter">COOPERATION MODE</p>
@@ -43,7 +43,7 @@
   <div class="policy">
        <div class="wrap-box">
               <div class="product-display">
-                <p class="circle"></p>
+                <p class="circle"><img src="../assets/important.png" alt=""></p>
                 <p><b>合作政策</b></p>
                 <p class="line"></p>
                 <p class="letter">COOPERATION POLICY</p>
@@ -71,7 +71,7 @@
   <div class="suppot">
        <div class="wrap-box">
               <div class="product-display">
-                <p class="circle"></p>
+                <p class="circle"><img src="../assets/important.png" alt=""></p>
                 <p><b>合作支持</b></p>
                 <p class="line"></p>
                 <p class="letter">COOPERATIVE SUPPORT</p>
@@ -120,13 +120,8 @@ div.wrap-box{
   font-family: MicrosoftYaHei-Bold;
   font-size: 0.28rem;
 }
-p.circle{
-  display:inline-block;
-    width: 0.1rem;
-  height: 0.1rem;
-  background: #ffffff;
-  border-radius: 50%;
-  border: 4px solid #0063A5;
+p.circle img{
+
   margin-top: 1.2rem;
   margin-bottom: 0.12rem;
 }

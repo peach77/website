@@ -42,7 +42,7 @@
             </ul>
           </li>
           <li @click="ChangeTheNavigation('solution')">
-            <router-link to="/Solution" active-class="active"
+            <router-link to="/Solution/OEM" active-class="active"
               >解决方案</router-link
             >
             <ul>
@@ -128,13 +128,13 @@ div.nav ul a {
   font-family: MicrosoftYaHei;
   color: #212121;
   margin-left: 0.5rem;
-  font-weight: bold;
+
   text-decoration: none;
 }
 
 div.nav li .active {
   color: #297cb3;
-  font-weight: bold;
+ 
 }
 
 div.nav li {

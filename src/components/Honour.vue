@@ -12,7 +12,7 @@
             </div>
             <div class="wrap-box">
                 <div class="product-display">
-                  <p class="circle"></p>
+                  <p class="circle"><img src="../assets/important.png" alt=""></p>
                   <p><b>荣誉资质</b></p>
                   <p class="line"></p>
                   <p class="letter">HONOR AND QUALIFICATION</p>
@@ -90,13 +90,8 @@ div.wrap-box{
   font-family: MicrosoftYaHei-Bold;
   font-size: 0.28rem;
 }
-p.circle{
-  display:inline-block;
-    width: 0.1rem;
-  height: 0.1rem;
-  background: #ffffff;
-  border-radius: 50%;
-  border: 4px solid #0063A5;
+p.circle img{
+
   margin-top: 1.2rem;
   margin-bottom: 0.12rem;
 }
@@ -114,12 +109,14 @@ background:rgba(0,99,165,1);
   margin-bottom: 1.34rem;
 }
 div.jiang{
-  width: 62.5%;
+  width: 1200px;
   margin: auto;
   margin-bottom: 0.87rem;
-  text-align: center;
+ 
 }
 div.jiang img{
-  width: 100%;
+
+width: 100%;
+  
 }
 </style>

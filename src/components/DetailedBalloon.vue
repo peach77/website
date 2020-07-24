@@ -4,9 +4,9 @@
       <div class="top-box">
           <div class="name">
               <p class="first"> 
-                <router-link to="/">产品中心 &gt;</router-link>
-              <router-link to="/">我们的产品 &gt;</router-link>
-              <router-link to="/">气球机</router-link>
+               <router-link to="/Products">产品中心 &gt;</router-link>
+            <router-link to="/Products/Balloon">我们的产品 &gt;</router-link>
+            <router-link to="/Products/Balloon/DetailedBalloon">气球机</router-link>
               </p>
               <div class="head">
                  <div class="left"><img src="../assets/qiqiuji@2x.png" alt=""></div>
@@ -137,7 +137,16 @@
     </div>
     <div class="bottom">
          <div id="three">
-            <h1>我是询问合作</h1>
+             <div id="three">
+         <div class="ask">
+           <input type="text" placeholder="*姓名">
+           <input type="tel" placeholder="*电话">
+           <input type="text" placeholder="*公司名称">
+         </div>
+          <textarea placeholder="请输入您的留言内容..."></textarea>
+           <input type="submit" value="提交" class="sub">
+            
+      </div>
          </div>
     </div>
   </div>
@@ -196,7 +205,7 @@ div.left{
   box-sizing: border-box;
 }
 div.left img{
-  border: 1px dotted rgba(33,33,33,1);
+ 
   margin-right: 0.47rem;
 }
 div.head{
@@ -336,9 +345,7 @@ div.detailed  .one-left {
   margin-right: 0.5rem;
    box-sizing: border-box;
 }
-div.detailed  .one-left img{
-   border: 1px dotted rgba(33,33,33,1);
-}
+
 div.detailed #one{
   margin-top: 0.6rem;
   display: flex;
@@ -404,7 +411,7 @@ div.detailed #two .img{
   background-repeat: no-repeat;
   width: 5.47rem;
   height: 7.02rem;
-  border: 1px dotted #0063A5;
+
   margin: auto;
   
     font-family: MicrosoftYaHei;
@@ -501,12 +508,55 @@ div.detailed .commen .Parameter{
   font-family: MicrosoftYaHei;
   margin-bottom: 0.3rem;
 }
-div.bottom #three{
-
+div.bottom #three {
   width: 62.5%;
+  min-width: 1200px;
   height: 500px;
-  background-color: red;
+  padding-top:0.5rem;
   margin: 0 auto;
+}
+div.bottom #three .ask{
+  display: flex;
+  justify-content: space-between;
+}
+div.bottom #three .ask input{
+  width: 30%;
+    height: 0.5rem;
+  background-color:rgba(243,243,243,1);
+  border: none;
+  outline: none;
+  height: 0.72rem;
+  font-size: 0.18rem;
+  font-family: MicrosoftYaHei;
+  padding-left: 0.18rem;
+  box-sizing: border-box;
+}
+div.bottom  #three textarea{
+  margin: auto;
+   width: 100%;
+  padding-top: 0.18rem;
+    padding-left: 0.18rem;
+  box-sizing: border-box;
+  background-color:rgba(243,243,243,1);
+   border: none;
+  outline: none;
+min-height: 2rem;
+  margin-top: 0.18rem;
+  resize: none;
+   font-size: 0.18rem;
+   overflow: hidden;
+   font-family: MicrosoftYaHei;
+}
+div.bottom  #three .sub{
+  width: 100%;
+  background-color: rgba(0,99,165,1);
+  line-height: 0.54rem;
+  color: white;
+  margin-top: 0.18rem;
+  border: none;
+  outline: none;
+  font-size: 0.18rem;
+  font-family: MicrosoftYaHei;
 }
 div.detailed .commen{
   margin-top:0.8rem;

@@ -13,7 +13,7 @@
     <div class="productList-bgc">
       <div class="product-banner">
         <div class="product-display">
-          <p class="circle"></p>
+          <p class="circle"><img src="../assets/important.png" alt=""></p>
           <p><b>产品展示</b></p>
           <p class="line"></p>
           <p class="letter">PRODUCT DISPLAY</p>
@@ -40,7 +40,7 @@
     <div class="blue-bgc">
       <div class="blue-bgc-wrap">
         <div class="product-display">
-          <p class="circle-one"></p>
+          <p class="circle-one"><img src="../assets/fuzhutuxing@2x.png" alt=""></p>
           <p v-bind:style="{ color: 'white' }"><b>解决方案</b></p>
           <p v-bind:style="{ color: 'white' }" class="line-one"></p>
           <p v-bind:style="{ color: 'white' }" class="letter">
@@ -82,11 +82,45 @@
       </div>
     </div>
     <div class="news">
-      <router-link to="/CompanyNews"><h1>我是新闻板块</h1></router-link>
+       <div class="product-display">
+        <p class="circle"><img src="../assets/important.png" alt=""></p>
+        <p><b>公司动态</b></p>
+        <p class="line"></p>
+        <p class="letter">COMPANY NEWS</p>
+      </div>
+      
+      <!-- <router-link to="/CompanyNews"><h1>我是新闻板块</h1></router-link> -->
+      <div class="all-news">
+            <div class="hotnews">
+                <img src="../assets/xinwendongtai.png" alt="">
+                <p><b>秦皇岛市政府扶持趣云无人设备全面落地港城</b></p>
+                <p class="recently">近期，秦皇岛市杨铁林副市长、市旅游和文化广电局李文生书记、市科技局郭拥军局长等领导与趣云科技董事长韩晓虎先生针对趣云科技线下物联网无人值守设备在本市的铺设进行座谈。</p>
+                <router-link to='/CompanyNews'>查看详情 &gt;</router-link>
+                
+            </div>
+            <div class="newslist">
+                <ul>
+                <router-link to='/CompanyNews'>
+                  <li>
+                    <p class="date"><span><b>29</b></span><br><span>2020/05</span></p>
+                    <p class="title"><span><b>秦皇岛市政府扶持趣云无人设备全面落地港城</b></span><br><span>近期，秦皇岛市杨铁林副市长、市旅游和文化广电局李文生书记、市科技局郭拥军局长等领导与趣云科技董事长韩晓虎先生针对趣云科技线下物联网无人值守设备在本市的铺设进行座谈。</span></p></li>
+                </router-link>
+                <router-link to='/CompanyNews'>
+                    <li><p class="date"><span><b>14</b></span><br><span>2020/05</span></p>
+                    <p class="title"><span><b>新飞跃：趣云科技受到政府扶持全速发展！</b></span><br><span>5月14日上午，秦皇岛市政府孙国胜副市长、张仕民副秘书长、秦皇岛银行张宏伟行长一行莅临秦皇岛趣云科技有限公司参观指导工作，公司董事长韩晓虎、总经理刘金国等领导热情接待，并陪同考察！</span></p></li>
+                </router-link>
+                <router-link to='/CompanyNews'>
+                    <li><p class="date"><span><b>07</b></span><br><span>2020/05</span></p>
+                    <p class="title"><span><b>智能生鲜售卖机首现廊坊小区，最新购物体验你想来试试吗？</b></span><br><span>五一小长假，有人周边游，有人家里瘫，趣云联不停歇。赶在五一小长假高峰期给予客户开业活动支持，另附一份安装后社区居民新鲜的体验报告。<br><br></span></p></li>
+                </router-link>
+                </ul>
+            </div>
+      </div>
+
     </div>
     <div class="partner">
       <div class="product-display">
-        <p class="circle"></p>
+        <p class="circle"><img src="../assets/important.png" alt=""></p>
         <p><b>合作伙伴</b></p>
         <p class="line"></p>
         <p class="letter">COOPERATION PARTNERS</p>
@@ -105,7 +139,27 @@
       </div>
     </div>
     <div class="contact" id="company">
-      <div class="left"><h2>11111111111111</h2></div>
+      <div class="left">
+       </div>
+        <div class="form">
+            <div class="product-display">
+                <p class="circle"></p>
+                <p><b>联系我们</b></p>
+                <p class="line"></p>
+                <p class="letter">CONTACT US</p>
+            </div>
+            
+           
+              <input type="text" name=""  class="text" v-model="$store.state.text" placeholder="*姓名">
+            
+            <input type="tel" name=""  class="tel" v-model="$store.state.tel" placeholder="*电话">
+          
+            <br>
+            <textarea name="" cols="30" rows="10" v-model="$store.state.textarea" placeholder='请输入您的留言内容'></textarea><br>
+            <input type="submit" value="提交" class="sub">
+            
+
+        </div>
       <div class="right">
         <p class="right-one"><b>秦皇岛趣云科技有限公司</b></p>
         <p class="right-two">电话：400-0235580</p>
@@ -136,7 +190,12 @@ export default {
       this.$el.querySelector(selector).scrollIntoView();
       this.$store.commit("Anchor", n);
     }
-  }
+  },
+ updated () {
+    console.log(this.$store.state.text);
+    console.log(this.$store.state.tel);
+    console.log(this.$store.state.textarea);
+  },
 };
 </script>
 <style scoped>
@@ -150,7 +209,10 @@ export default {
 div.banner {
   position: relative;
 }
+
+
 div.experience {
+  font-family: MicrosoftYaHei;
   position: absolute;
   margin: auto;
   position: absolute;
@@ -171,27 +233,17 @@ div.experience:hover {
   cursor: pointer;
 }
 .product-display p {
-  font-family: MicrosoftYaHei-Bold;
+  font-family: MicrosoftYaHei;
   font-size: 0.28rem;
 }
 
-p.circle {
-  display: inline-block;
-  width: 0.1rem;
-  height: 0.1rem;
-  background: #ffffff;
-  border-radius: 50%;
-  border: 4px solid #0063a5;
+p.circle img {
+ 
   margin-top: 1.2rem;
   margin-bottom: 0.12rem;
 }
-p.circle-one {
-  display: inline-block;
-  width: 0.1rem;
-  height: 0.1rem;
-  background: #1b3563;
-  border-radius: 50%;
-  border: 4px solid #ffffff;
+p.circle-one img {
+ 
   margin-top: 1.2rem;
   margin-bottom: 0.12rem;
 }
@@ -210,7 +262,7 @@ p.circle-one {
   margin-top: 0.15rem;
 }
 .product-banner {
-  width: 62.5%;
+  width:12rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -219,8 +271,9 @@ p.circle-one {
   text-align: center;
 }
 .product-bgc {
-  border: 1px solid #e7e7e7;
-  box-shadow: 0 0 1px;
+
+ box-shadow:1px 1px 5px 5px #e2e2e2;
+ 
   width: 3rem;
   margin: 0 auto;
   height: 3.8rem;
@@ -244,6 +297,7 @@ p.circle-one {
 .product-bgc .suger {
   font-size: 0.18rem;
 }
+
 .product-display .letter {
   font-size: 0.14rem;
   margin-top: 0.1rem;
@@ -260,35 +314,53 @@ div.blue-bgc {
 	-moz-background-size:100% 100%; */
 }
 div.blue-bgc-wrap {
-  width: 62.5%;
+  width: 12rem;
   margin: 0 auto;
   text-align: center;
 }
 div.four-box {
   margin: 0 auto;
-  width: 62.5%;
+  /* width: 62.5%; */
+  width: 1200px;
   min-width: 688px;
+}
+
+@media screen and (max-width:1200px){
+div.four-box {
+  margin: 0 auto;
+  width: 100%;
+ 
+}
 }
 div.four-box ul {
   display: flex;
   /* height: 5.4rem; */
   justify-content: space-between;
 }
+
 div.four-box ul li {
   display: inline-block;
   width: 2.8rem;
   height: 3.6rem;
-  
   background-color: rgba(255, 255, 255, 0.83);
   text-align: center;
   padding-left: 0.4rem;
   padding-right: 0.4rem;
+  padding-top: 0.6rem;
   box-sizing: border-box;
+}
+@media screen and (max-width:1200px){
+div.four-box {
+  margin: 0 auto;
+  width: 100%;
+ 
+}
+
 }
 div.four-box ul li p.first {
   font-size: 0.18rem;
   color: #0063a5;
-  margin-top: 0.3rem;
+  
   margin-bottom: 0.2rem;
 
   font-family: MicrosoftYaHei;
@@ -312,6 +384,7 @@ div.four-box ul li:hover {
   background-color: rgba(15, 78, 149, 1);
   opacity: 0.9;
   transform: scale(1.1);
+  position: relative;
   /* width: 3rem; */
   /* height: 3.8rem; */
   /* margin-top: -0.1rem; */
@@ -345,14 +418,79 @@ div.four-box ul .four:hover a {
   margin-top: 0.1rem;
 }
 div.news {
-  background-color: thistle;
-  height: 300px;
+ 
+  /* width: 62.5%; */
+  margin: auto;
+}
+div.all-news{
+  /* min-width: 1200px; */
+  display: flex;
+ 
+}
+div.hotnews{
+  font-family:MicrosoftYaHei;
+  margin-right: 0.8rem;
+}
+div.hotnews .recently{
+  width: 4.8rem;
+  font-size: 0.14rem;
+  line-height: 0.3rem;
+  margin-bottom: 0.4rem;
+}
+div.hotnews b{
+  font-size: 0.18rem;
+  margin-top: 0.6rem;
+  display: block;
+  margin-bottom: 0.28rem;
+}
+div.hotnews a{
+  text-decoration: none;
+  color: white;
+  line-height: 0.58rem;
+  text-align: center;
+  background-color: rgba(0, 99, 165, 1);
+  display: block;
+  width: 2rem;
+  font-size: 0.18rem;
+  border-radius: 5px;
+}
+div.newslist li{
+display: flex;
+justify-content: flex-start;
+margin-bottom: 0.75rem;
+font-family: MicrosoftYaHei;
+font-size: 0.14rem;
+align-items: center;
+
+}
+div.newslist a{
+  color: black;
+  text-decoration: none;
+}
+div.newslist span b{
+  font-size: 0.18rem;
+ 
+}
+div.newslist li .date{
+  text-align: right;
+  border-right: 1px solid rgba(185, 185, 185, 1);
+  padding-right: 0.2rem;
+  margin-right: 0.26rem;
+  height: 0.9rem;
+  font-size: 0.14rem;
+ 
+}
+div.newslist li .date b{
+  font-size: 0.24rem;
+}
+div.newslist li .title{
+  line-height: 0.3rem;
 }
 div.partner {
   padding-bottom: 1rem;
 }
 div.img-box {
-  width: 62.5%;
+  width:12rem;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -369,16 +507,102 @@ div.img-box img {
   margin-right: 0.3rem;
 }
 div.contact {
-  width: 100%;
+ max-width: 100%;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
+  margin: auto;
+  position: relative;
+  max-height: 7.2rem;
 }
 div.contact .left {
   width: 50%;
 
   background-color: #f3f3f3;
-  padding-left: 18.5%;
+ 
+ text-align: right;
+
+ 
+}
+
+div.form{
+  position: absolute;
+width: 7rem;
+height: 5.5rem;
+ top:0.66rem;
+ right: 45%;
+  background-color: white;
+  z-index: 10;
+  padding: 0.55rem;
+  box-sizing: border-box;
+}
+div.form .product-display{
+  text-align: left;
+ 
+}
+div.form .product-display .circle{
+ margin-top: 0;
+}
+div.form .product-display .letter{
+  margin-bottom: 0.47rem;
+}
+div.form  .text{
+ width: 45%;
+  height: 0.5rem;
+  background-color:rgba(243,243,243,1);;
+  border: none;
+  outline: none;
+  margin-right: 4%;
+  font-size: 0.18rem;
+  font-family: MicrosoftYaHei;
+  padding-left: 0.18rem;
+  box-sizing: border-box;
+
+}
+div.form  .tel{
+    box-sizing: border-box;
+   padding-left: 0.18rem;
+ width: 45%;
+  height: 0.5rem;
+  background-color:rgba(243,243,243,1);
+  border: none;
+  outline: none;
+   font-size: 0.18rem;
+font-family: MicrosoftYaHei;
+}
+div.form ::-webkit-input-placeholder{
+  color: rgba(153, 153, 153, 1)
+}
+div.form ::-webkit-input-placeholder::before{
+  content: "*";
+  color: red;
+}
+
+div.form textarea{
+  padding-top: 0.18rem;
+    padding-left: 0.18rem;
+  box-sizing: border-box;
+  background-color:rgba(243,243,243,1);;
+   border: none;
+  outline: none;
+  width: 94%;
+  margin-top: 0.18rem;
+  resize: none;
+   font-size: 0.18rem;
+   max-height: 1.4rem;
+   font-family: MicrosoftYaHei;
+   overflow: hidden;
+}
+div.form .sub{
+  width: 94%;
+  background-color: rgba(0,99,165,1);
+  line-height: 0.54rem;
+  color: white;
+  margin-top: 0.18rem;
+  border: none;
+  outline: none;
+  font-size: 0.18rem;
+  font-family: MicrosoftYaHei;
 }
 div.contact .right {
   width: 50%;
@@ -386,20 +610,22 @@ div.contact .right {
   background-color: #0063a5;
   padding-right: 18.5%;
   text-align: left;
+  padding-left:2rem;
+  box-sizing: border-box;
 }
 div.contact .right-one {
   font-size: 0.24rem;
   color: white;
   font-family: MicrosoftYaHei;
   margin-top: 0.63rem;
-  margin-left: 2rem;
+ 
 }
 div.contact .right-two {
   font-size: 0.18rem;
   color: white;
   font-family: MicrosoftYaHei;
   margin-top: 0.5rem;
-  margin-left: 2rem;
+ 
 }
 div.contact .right-three,
 .right-four {
@@ -407,12 +633,12 @@ div.contact .right-three,
   color: white;
   font-family: MicrosoftYaHei;
   margin-top: 0.5rem;
-  margin-left: 2rem;
+ 
 }
 div.contact .small-img {
   display: flex;
   margin-top: 0.5rem;
-  margin-left: 2rem;
+
   margin-bottom: 1.2rem;
 }
 div.contact .small-img p {

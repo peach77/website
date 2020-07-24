@@ -21,7 +21,7 @@
                  </div>
                  <div class="our-products">
                         <div class="product-display">
-                            <p class="circle"></p>
+                            <p class="circle"><img src="../assets/important.png" alt=""></p>
                             <p><b>我们的产品</b></p>
                             <p class="line"></p>
                             <p class="letter">OUR PRODUCTS</p>
@@ -85,7 +85,7 @@ div.products{
 }
 div.item-list img{
     margin-top: 0.5rem;
-    border: 1px dotted black;
+  
     margin-bottom: 0.2rem;
 }
 div.our-products{
@@ -106,9 +106,7 @@ div.show-box {
     text-align: center;
     margin-bottom: 0.4rem;
 }
-div.show-box img{
-    border: 1px dotted grey;
-}
+
 div.show-box p{
     line-height: 1rem;
     font-family: MicrosoftYaHei;
@@ -127,13 +125,8 @@ div.show-box a{
   font-family: MicrosoftYaHei-Bold;
   font-size: 0.28rem;
 }
-p.circle{
-  display:inline-block;
-    width: 0.1rem;
-  height: 0.1rem;
-  background: #ffffff;
-  border-radius: 50%;
-  border: 4px solid #0063A5;
+p.circle img{
+  
   margin-top: 1.2rem;
   margin-bottom: 0.12rem;
 }
@@ -156,9 +149,6 @@ div.item-list a.only{
     color: white;
    
 }
-div.item-list a.only img{
-       border: 1px dotted #88898b;
-      
-}
+
 </style>
 
