@@ -14,3 +14,23 @@ a{text-decoration:none;}
 a:link{color:#009;} 
 a:visited{color:#800080;} 
 a:hover,a:active,a:focus{color:#c00;text-decoration:underline;} 
+
+.el-carousel__button{
+    width: 0.14rem;
+    height: 0.14rem;
+    border-radius: 0.7rem;
+    background-color:#fff;
+    opacity: 1;
+}
+
+.is-active .el-carousel__button{
+    width: 0.45rem;
+    background-color:#0063A5;
+}
+
+.product-banner .el-carousel__container button{
+    background-color: rgba(0,0,0,0)!important;
+    color:#aaa;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 3px 1px #ccc;
+}

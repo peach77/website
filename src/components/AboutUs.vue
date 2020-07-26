@@ -52,7 +52,7 @@
             <div class="cd-timeline-img cd-picture"></div>
 
             <div class="cd-timeline-content">
-              <p class="my">
+              <p class="my leftMy">
                 <span class="leftside"
                   >鸿瑞科技限公司成立，同年建立25亩生产基地</span
                 >
@@ -90,7 +90,7 @@
             <div class="cd-timeline-img cd-picture"></div>
 
             <div class="cd-timeline-content">
-              <p class="my">
+              <p class="my leftMy">
                 <span class="leftside">出仓机产品市场份额占有率达到95%</span
                 ><span class="year"><b>2004</b><br />years</span>
               </p>
@@ -122,7 +122,7 @@
             <div class="cd-timeline-img cd-picture"></div>
 
             <div class="cd-timeline-content">
-              <p class="my">
+              <p class="my leftMy">
                 <span class="leftside"
                   >成为中国港口协会筒仓与散粮运输协会理事会单位</span
                 ><span class="year"
@@ -159,7 +159,7 @@
             <div class="cd-timeline-img cd-picture"></div>
 
             <div class="cd-timeline-content">
-              <p class="my">
+              <p class="my leftMy">
                 <span class="leftside">
                   两只老虎科技有限公司成立，标志着公司从工业自动化行业
                   向民用自动化行业拓展 </span
@@ -196,7 +196,7 @@
             <div class="cd-timeline-img cd-picture"></div>
 
             <div class="cd-timeline-content">
-              <p class="my">
+              <p class="my leftMy">
                 <span class="leftside"
                   >世界首创时空球同年，产品出口东南亚、非洲等地30余个国家</span
                 ><span class="year"
@@ -223,8 +223,8 @@
                   ><br /><span>12月 趣云科技成立</span>
                 </span> -->
                 <span
-                  >03月 荣获中国创新创业一百强单位同期取得了欧盟CE认证<br />03月
-                  北岛博智、增益科技进行天使轮投资<br />12月 趣云科技成立</span
+                  ><span style="display:flex">03月 荣获中国创新创业一百强单位同期取得了欧盟CE认证</span><br /><span style="display:flex">03月
+                  北岛博智、增益科技进行天使轮投资</span><br /><span style="display:flex">12月 趣云科技成立</span></span
                 >
               </p>
             </div>
@@ -235,13 +235,13 @@
             <div class="cd-timeline-img cd-picture"></div>
 
             <div class="cd-timeline-content">
-              <p class="my" style="line-height: 0.3rem; text-align: right;">
-                <span
-                  ><span>线上商城进入开发阶段 03月</span><br /><span
-                    >无人设备在全国展开大面积运营 04月</span
-                  ><br /><span
-                    >三大生产基地同步开启,总平米数达到30亩地 05月</span
-                  ><br /><span>入驻东北大学成立项目科研中心 06月</span></span
+              <p class="my leftMy" style="line-height: 0.3rem; text-align: right;">
+                <span class="leftSpan"
+                  ><span class="leftSpanText"><span style="margin:0 6px">线上商城进入开发阶段</span><span>03月</span></span><br /><span class="leftSpanText"
+                    ><span style="margin:0 6px">无人设备在全国展开大面积运营</span><span>04月</span></span
+                  ><br /><span class="leftSpanText"
+                    ><span style="margin:0 6px">三大生产基地同步开启,总平米数达到30亩地</span> <span>05月</span></span
+                  ><br /><span class="leftSpanText"><span style="margin:0 6px">入驻东北大学成立项目科研中心</span> <span>06月</span></span></span
                 >
                 <span class="year"><b>2020</b><br />years</span><br />
               </p>
@@ -505,24 +505,23 @@ div.strength .white-line {
 
 .cd-timeline-img {
   position: absolute;
-  top: 8px;
-  left: 12px;
-  width: 30px;
-  height: 30px;
+  top: 0px;
+  left: 18px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(0, 99, 165, 1);
+  box-shadow: 0 0 0 6px rgba(0, 99, 165, 0.4);
 }
 .cd-timeline-img {
   background: rgba(0, 99, 165, 1);
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
-    width: 30px;
-    height: 30px;
+    width: 18px;
+    height: 18px;
     left: 50%;
-    margin-left: -15px;
-    margin-top: 15px;
-    /* Force Hardware Acceleration in WebKit */
+    margin-left: -9px;
+    margin-top: 26px;
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
   }
@@ -541,7 +540,10 @@ div.strength .white-line {
   font-family: MicrosoftYaHei;
   vertical-align: center;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+}
+.leftMy{
+  justify-content: flex-end!important;
 }
 .cd-timeline-content p.my-special {
   font-size: 0.18rem;
@@ -592,6 +594,19 @@ div.strength .white-line {
     font-size: 14px;
     font-size: 0.875rem;
   }
+  .leftMy{
+    display: flex;
+    flex-direction: row-reverse!important;
+    justify-content: flex-end!important;
+  }
+  .leftSpan{
+    text-align: start;
+  }
+  .leftSpanText{
+    display: flex;
+    flex-direction: row-reverse!important;
+    justify-content: flex-end!important;
+  }
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
@@ -632,6 +647,16 @@ div.strength .white-line {
     left: auto;
     right: 122%;
     text-align: right;
+  }
+  .leftMy{
+    display: flex;
+    flex-direction: row!important;
+    justify-content: flex-end!important;
+  }
+  .leftSpanText{
+    display: flex;
+    flex-direction: row!important;
+    justify-content: flex-end!important;
   }
 }
 </style>

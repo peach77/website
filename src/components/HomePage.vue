@@ -18,7 +18,7 @@
           <p class="line"></p>
           <p class="letter">PRODUCT DISPLAY</p>
         </div>
-        <el-carousel :interval="2000" type="card" height="464px">
+        <el-carousel :interval="2000" type="card" height="4.64rem">
           <el-carousel-item
             v-for="item in $store.state.productList"
             :key="item.id"
