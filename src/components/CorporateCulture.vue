@@ -246,6 +246,7 @@ export default {
   data() {
     return {
       isEnter: false,
+      timeSaver: "",
     };
   },
   methods: {
@@ -287,7 +288,7 @@ export default {
 
     // change();
 
-    setInterval(() => {
+    this.timeSaver = setInterval(() => {
       if (!this.isEnter) {
         this.$store.commit("ChangeSwitch", this.$store.state.switch);
         switch (this.$store.state.switch) {
@@ -311,6 +312,10 @@ export default {
   },
   updated() {
     console.log(this.$store.state.switch);
+  },
+  destroyed() {
+    clearInterval(this.timeSaver);
+    this.timeSaver = null;
   },
 };
 </script>
