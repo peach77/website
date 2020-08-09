@@ -182,6 +182,38 @@ export default {
     this.$store.commit("BtnSwitch", n);
   }
 },
+  mounted() {
+      console.log(this.$store.state.switch);
+       var change=()=>
+         {
+        switch(this.$store.state.switch){
+    case 'one' :
+        setInterval(()=>{
+                this.$store.commit("ChangeSwitch",'two')
+             },2000)
+       break; 
+    case "two" :
+      setInterval(()=>{
+                this.$store.commit("ChangeSwitch",'three')
+             },2000)
+       break;
+     case "three" :
+        setInterval(()=>{
+                this.$store.commit("ChangeSwitch",'four')
+             },2000)
+       break; 
+    default : 
+       setInterval(()=>{
+                this.$store.commit("ChangeSwitch",'one')
+             },2000)
+}
+         }
+
+  change()
+  },
+  updated () {
+    console.log(this.$store.state.switch);
+  },
 }
 </script>
 

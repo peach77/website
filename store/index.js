@@ -43,7 +43,9 @@ const store = new Vuex.Store({
     },
 
     mutations:{
-   
+        ChangeSwitch(state,n){
+            state.switch=n
+        },
         ChangeTheNavigation(state,n){
             state.name = n
         },

@@ -205,7 +205,11 @@
 export default {
   name: "solition",
   mounted() {
-    console.log(this.$store.state.model);
+       console.log(this.$store.state.model);
+    setInterval(()=>{
+     
+       this.$store.state.model=!this.$store.state.model
+    },3000)
   },
   methods: {
     ChangeModel(n) {
