@@ -13,7 +13,7 @@
     "element-ui": "^2.13.2",
     "lib-flexible": "^0.3.2",
     "px2rem-loader": "^0.1.9",
-    "swiper": "^6.0.3",
+    "swiper": "^6.5.1",
     "vue": "^2.6.11",
     "vue-axios": "^2.1.5",
     "vue-router": "^3.3.4",
